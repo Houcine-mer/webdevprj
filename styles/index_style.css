@@ -15,11 +15,11 @@
                 height: 100%;
                 opacity: 0.90;
             }
-            .upper{
+            /* .upper{
                 background-color: rgb(27, 27, 27);
-                /* text-align: center; */
+                /* text-align: center; 
                 color: rgb(206, 189, 189);
-                /* font-size:70px; */
+                /* font-size:70px; 
                 border: none;
                 margin-top:0%;
                 margin-bottom: 0px;
@@ -65,8 +65,107 @@
             }
             .button2:hover{
                 background-color:gray;
+            } */
+             .upper {
+    display: grid;
+    grid-template-columns: 6% 6% auto 190px; /* Logo | Title+Nav | Buttons */
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    color: rgb(206, 189, 189);
+    width: 95.7vw;
+    height: 10vh;
+    padding: 0 2%;
+    gap: 1rem; 
+    background-color: rgb(27, 27, 27);
+    /* text-align: center; */
+    color: rgb(255, 255, 255);
+    /* font-size:70px; */
+    border: none;
+    margin-top:0%;
+    margin-bottom: 0px;
+    width: 95.7vw;
+    height: 10vh;
+    padding: 1%;
+    padding-top: 0%;
+    padding-bottom: 3%;
+    flex-wrap: nowrap;
+}
+
+.logo {
+  width: 6vmax; /* will scale according to grid column */
+  height: auto;
+  margin-top: 0%;
+
+
+}
+
+.title_nav {
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.title_nav h1 {
+    padding-top: 0;
+    color: white;
+    margin-top:0%;
+}
+
+.href1 {
+    margin-top: 3%;
+    margin-left: 40%;
+    display: flex;
+    gap: 20%; /* spacing between links */
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+    padding-top: 1%;
+    margin-bottom: 10%;
+    flex-wrap: nowrap;
+}
+
+
+            .login_signup{
+                border: 3px  black;
+                width: 15vmax;
+                height: 80%;
+                display: inline;
+                top: 5%;
+                left: 80%;
+                padding-top: 0px;
+                margin-top: 10%;
+                display: flex;
+                 gap: 10%;
+                justify-content: flex-end;
+            }
+            .button1{
+                width: 45%;
+                height: 40%;
+                background-color: black;
+                border-radius: 12%;
+                color:  white;
+                margin-right: 1%;
+            }
+            .button1:focus{
+                background-color: gray;
+            }
+            .button1:hover{
+                background-color:gray;
             }
 
+           .button2{
+                display: inline-block;
+                width: 45%;
+                height: 40%;
+                background-color: black;
+                border-radius: 12%;
+                color:  white;
+            }
+            .button2:focus{
+                background-color: gray;
+            }
+            .button2:hover{
+                background-color:gray;
+            }
             .button3{
                 width: 100px;
                 height: 50px;
