@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base { 
+  body {
+    @apply m-0 p-0 overflow-x-hidden box-border;
+  }
+
+  html { 
+    @apply m-0 p-0 overflow-x-hidden;
+  }
+}
+@layer components {
+  .topbar {
+  @apply flex h-18 items-center gap-3 bg-[#181818] px-6 fixed top-0 left-0 right-0 z-50 ;
+  }
+  .logo {
+  @apply w-17 h-10 max-w-full rounded-lg shadow-md;
+  }
+  .AutoDz {
+  @apply text-4xl  text-white font-bold ;
+  }
+}
+
+
+@layer components {
+  .form-container {
+  @apply min-h-screen p-4 flex bg-[url('/images/loginpic.jpg')] opacity-90 bg-cover bg-center bg-fixed justify-center items-center;
+  }
+  .text{
+  @apply text-4xl text-gray-900 font-bold;
+  }
+  .form {
+  @apply px-20 py-11 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
+  }
+  .form label {
+  @apply text-2xl text-[#1f1f1f] font-bold;
+  }
+  .form input {
+  @apply p-2.5 w-100 bg-[#737070] border border-gray-900 rounded-lg;
+  }
+  .form textarea {
+  @apply p-2.5 border rounded-lg resize-none;
+  }
+
+}
+
+.Signup {
+  @apply px-5 py-3 w-75  text-white bg-gray-800 rounded-md hover:bg-gray-900 text-center text-xl ;
+}
