@@ -36,7 +36,7 @@
   @apply text-2xl text-[#1f1f1f] font-bold;
   }
   .form input {
-  @apply p-2.5 w-100 bg-[#737070] border border-gray-900 rounded-lg;
+  @apply p-2.5 h-13 w-100 bg-[#737070] border border-gray-900 rounded-lg;
   }
   .form textarea {
   @apply p-2.5 border rounded-lg resize-none;
