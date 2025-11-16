@@ -15,7 +15,7 @@
 @layer components {
   @media (min-width: 600px) {
     .topbar {
-    @apply flex h-18 items-center gap-3 bg-[#181818] px-6 fixed top-0 left-0 right-0 z-50 ;
+    @apply flex h-17 items-center gap-3 bg-[#181818] px-6 fixed top-0 left-0 right-0 z-50 ;
     }
     .home-link {
       @apply text-center text-white text-lg hover:underline absolute left-1/2 -translate-x-1/2; ;
