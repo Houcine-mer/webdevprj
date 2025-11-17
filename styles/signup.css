@@ -1,6 +1,20 @@
 @import "tailwindcss";
 
 
+
+@layer base { 
+
+  @media (max-width: 600px) {
+    body {
+      @apply m-0 p-0 h-screen overflow-hidden overflow-x-hidden box-border;
+    }
+
+    html { 
+      @apply m-0 p-0 h-screen overflow-hidden overflow-x-hidden;
+    }
+  }
+}
+
 @layer base { 
   @media (min-width: 600px) {
     body {
@@ -15,20 +29,20 @@
 @layer components {
   @media (min-width: 600px) {
     .topbar {
-    @apply flex h-17 items-center gap-3 bg-[#181818] px-6 fixed top-0 left-0 right-0 z-50 ;
+    @apply flex h-12 items-center gap-3 bg-[#181818] px-6 fixed top-0 left-0 right-0 z-50 ;
     }
     .home-link {
       @apply text-center text-white text-lg hover:underline absolute left-1/2 -translate-x-1/2; ;
     }
     .logo {
-    @apply w-17 h-10 max-w-full rounded-lg shadow-md;
+    @apply w-13 h-8 max-w-full rounded-lg shadow-md;
     }
     .AutoDz {
-    @apply text-4xl  text-white font-bold ;
+    @apply text-2xl  text-white font-bold ;
     }
 
     .bottombar {
-      @apply flex items-center h-14 bg-[#181818] px-6 fixed bottom-0 left-0 right-0 z-50 ;
+      @apply flex items-center h-10 bg-[#181818] px-6 fixed bottom-0 left-0 right-0 z-50 ;
     }
     .copyright {
       @apply text-left text-sm text-white ;
@@ -49,13 +63,13 @@
     @apply text-4xl text-gray-900 font-bold;
     }
     .form {
-    @apply px-20 py-9 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
+    @apply mt-1 px-20 py-5 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
     }
     .form label {
-    @apply text-2xl text-[#1f1f1f] font-bold;
+    @apply text-xl text-[#1f1f1f] font-bold;
     }
     .form input {
-    @apply p-2.5 h-12 w-100 bg-[#737070] border border-gray-900 rounded-lg;
+    @apply p-2.5 h-10 w-90 bg-[#737070] border border-gray-900 rounded-lg;
     }
     .form textarea {
     @apply p-2.5 border rounded-lg resize-none;
@@ -64,7 +78,7 @@
 }
 @media (min-width: 600px) {
   .Signup {
-    @apply px-5 py-3 w-75  text-white bg-gray-800 rounded-md hover:bg-gray-900 text-center text-xl ;
+    @apply px-4 py-2 w-70  text-gray-200 bg-gray-800 rounded-md hover:bg-gray-900 text-center text-lg font-bold;
   }
 }
 
@@ -72,7 +86,7 @@
 @layer base { 
   @media (max-width: 600px) {
     body {
-      @apply m-0 p-0 overflow-x-hidden box-border;
+      @apply m-0 p-0 overflow-hidden overflow-x-hidden box-border;
     }
 
     html { 
@@ -89,20 +103,20 @@
       @apply text-center text-white text-sm hover:underline absolute left-1/2 -translate-x-1/2; ;
     }
     .logo {
-    @apply w-9 h-6 max-w-full rounded-lg shadow-md;
+    @apply w-8 h-5 max-w-full rounded-lg shadow-md;
     }
     .AutoDz {
-    @apply text-xl text-white font-bold ;
+    @apply text-lg text-white font-bold ;
     }
 
     .bottombar {
       @apply flex items-center h-11 bg-[#181818] px-2 fixed bottom-0 left-0 right-0 z-50 ;
     }
     .copyright {
-      @apply text-left text-xs text-white ;
+      @apply text-left text-[9px] text-white ;
     }
     .termsandprivacy {
-      @apply text-right text-xs text-white ml-auto hover:underline ;
+      @apply text-right text-[9px] text-white ml-auto hover:underline ;
     }
   }
 }
@@ -111,19 +125,19 @@
 @layer components {
   @media (max-width: 600px) {
     .form-container {
-    @apply min-h-screen p-4 flex bg-[url('/images/loginpic.jpg')] opacity-90 bg-cover bg-center bg-fixed justify-center items-center ;
+    @apply min-h-screen overflow-y-hidden p-4 flex bg-[url('/images/loginpic.jpg')] opacity-90 bg-cover bg-center bg-fixed justify-center items-center ;
     }
     .text{
-    @apply text-3xl text-gray-900 font-bold;
+    @apply text-2xl text-gray-900 font-bold;
     }
     .form {
-    @apply px-8 py-7 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
+    @apply mb-12 px-6 py-4 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
     }
     .form label {
-    @apply text-2xl text-[#1f1f1f] font-bold;
+    @apply text-xl text-[#1f1f1f] font-bold;
     }
     .form input {
-    @apply p-2.5 h-9 w-72 bg-[#737070] border border-gray-900 rounded-lg;
+    @apply p-2.5 h-8 w-62 bg-[#737070] border border-gray-900 rounded-lg;
     }
     .form textarea {
     @apply p-2.5 border rounded-lg resize-none;
@@ -132,6 +146,6 @@
 }
 @media (max-width: 600px) {
   .Signup {
-    @apply px-5 py-3 w-75  text-white bg-gray-800 rounded-md hover:bg-gray-900 text-center text-xl ;
+    @apply justify-center items-center px-5 py-3 w-50  text-gray-200 font-bold bg-gray-800 rounded-md hover:bg-gray-900 text-lg ;
   }
 }
