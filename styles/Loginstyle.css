@@ -1,538 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import "tailwindcss";
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (min-width: 300px) and (max-width: 600px) {
-  .topbar {
-    position: fixed;
-    background: #181818;
-    opacity: 100%;
-    height: 5vh;
-    width: 100vw;
-    align-items: center;
-    padding: 0 0.75rem;
-    justify-content: space-between;
-    display: flex;
-    z-index: 100;
-  }
-
-  .AutoDztext {
-    position: fixed;
-    left: 11vw;
-    font-weight: bold;
-    top: 1vh;
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
-  }
-
-  .Home {
-    position: relative;
-    font-size: 3vw;
-    top: 0vh;
-    left: 3.7vw;
-    text-align: center;
-    color: rgb(234, 231, 231);
-    font-family: "Poppins", sans-serif;
-  }
-
-  .AutoDzlogo {
-    position: fixed;
-    height: 16vh;
-    width: 15vw;
-    top: 1.3vh;
-    left: 0.6vw;
-    opacity: 100%;
-  }
-
-  /* Fixed class name from imgcontainer to img-container */
-  .imgcontainer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
-  .rightimg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .rightimg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    opacity: 90%;
-  }
 
 
-  /* Override inline styles on img */
+@layer base { 
 
-
-  .rectangle {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 85vw;
-    height: 60vh;
-    background-color: rgba(78, 76, 76, 0.5);
-    border-radius: 10px;
-    z-index: 10;
-  }
-
-  .overlay {
-    position: relative;
-    width: 100%;
-    padding-top: 2rem;
-  }
-
-  .overlay-text {
-    color: #000000;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    font-size: 7vw;
-    top : 3rem;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .form {
-    position: relative;
-    padding: 2rem 1rem;
-    display: flex;
-    top : 2rem;
-    left : 1.2rem;
-    
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .form label {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    
-    display: block;
-  }
-
-  .form input[type="text"],
-  .form input[type="password"] {
-    width: 20rem;
-    max-width: 90%;
-    height: 2rem;
-    
-    padding: 0 0.875rem;
-    box-sizing: border-box;
-    font-size: 1rem;
-    background-color: rgba(115, 113, 118, 0.55);
-    color: #000000;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    margin-bottom: 1rem;
-  }
-
-  .Loginbutton {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-
-  .Loginbutton input[type="submit"] {
-    width: 9rem;
-    height: 2.5rem;
-    background-color: #555755;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .Loginbutton input[type="submit"]:hover {
-    background-color: #3a3a3a;
-  }
-
-  .bottom {
-    background-color: #0b0a0a;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 6vh;
-    bottom: 0vh;
+  @media (max-width: 600px) {
+    body {
+      @apply m-0 p-0 h-screen overflow-hidden overflow-x-hidden box-border;
     }
 
-  .textfooter {
-    color: rgb(214, 208, 208);
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5px;
-    font-family: "Poppins", sans-serif;
-    bottom: 10vh;
-    font-size: 0.62rem;
+    html { 
+      @apply m-0 p-0 h-screen overflow-hidden overflow-x-hidden;
+    }
   }
 }
 
-@media (min-width: 600px) and (max-width: 1280px) {
-  .rightimg {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    opacity: 90%;
-    height: 100%;
-    width: 100vw;
-    max-width: 100%;
-    height: 96vh
-  }
+@layer base { 
+  @media (min-width: 600px) {
+    body {
+      @apply m-0 p-0 overflow-x-hidden box-border;
+    }
 
-  .topbar {
-    background: #131313;
-    opacity: 100;
-    height: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 0.75rem;
-    color: #fff;
-    position: relative;
-  }
-
-
-
-
-  .AutoDztext {
-    position: relative;
-    left: 8vw;
-    top: 0px;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 1.66rem;
-    color: white;
-  }
-  .AutoDzlogo {
-    position: relative;
-    top: 2vh;
-    right : 85.5vw;
-    height: 7vh;
-    width: 9vw;
-  }
-  .Home {
-    position: relative;
-    left: 1vw;
-    text-align: center;
-    color: rgb(234, 231, 231);
-    font-family: "Poppins", sans-serif;
-  }
-
-
-  .rightimg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .rectangle {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 85vw;
-    height: 60vh;
-    background-color: rgba(82, 77, 77, 0.5);
-    border-radius: 10px;
-    z-index: 10;
-  }
-
-  .overlay {
-    position: relative;
-    width: 100%;
-    padding-top: 2rem;
-  }
-
-  .overlay-text {
-    position: relative;
-    color: #000000;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    font-size: 4.5vw;
-    top : 3rem;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .form {
-    position: relative;
-    padding: 2rem 1rem;
-    display: flex;
-    top : 4rem;
-    
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .form label {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    display: block;
-  }
-
-  .form input[type="text"],
-  .form input[type="password"] {
-    width: 27rem;
-    max-width: 90%;
-    height: 2.5rem;
-    padding: 0 0.875rem;
-    box-sizing: border-box;
-    font-size: 1rem;
-    background-color: rgba(115, 113, 118, 0.55);
-    color: #000000;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-  }
-
-  .Loginbutton {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-
-  .Loginbutton input[type="submit"] {
-    width: 15rem;
-    height: 2.5rem;
-    background-color: #555755;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .Loginbutton input[type="submit"]:hover {
-    background-color: #3a3a3a;
-  }
-  .bottom {
-    background-color: #141313;
-    position: fixed;
-    margin: 0px;
-    padding: 0px;
-
-    bottom: 0px;
-    width: 100%;
-    height: 5vh;
-  }
-  .textfooter {
-    color: rgb(214, 208, 208);
-    position: relative;
-    top: 1.5vh;
-    left: 5px;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.62rem;
+    html { 
+      @apply m-0 p-0 overflow-x-hidden;
+    }
   }
 }
-@media (min-width: 1281px) {
-  .rightimg {
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    opacity: 90%;
-    height: 100%;
-    width: 50vw;
-    max-width: 100%;
-    height: 90vh ;
-  }
+@layer components {
+  @media (min-width: 600px) {
+    .topbar {
+    @apply flex h-12 items-center gap-3 bg-[#181818] px-6 fixed top-0 left-0 right-0 z-50 ;
+    }
+    .home-link {
+      @apply text-center text-white text-lg hover:underline absolute left-1/2 -translate-x-1/2; ;
+    }
+    .logo {
+    @apply w-13 h-8 max-w-full rounded-lg shadow-md;
+    }
+    .AutoDz {
+    @apply text-2xl  text-white font-bold ;
+    }
 
-  .topbar {
-    background: #131313;
-    opacity: 100;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 0.75rem;
-    color: #fff;
-    position: relative;
+    .bottombar {
+      @apply flex items-center h-10 bg-[#181818] px-6 fixed bottom-0 left-0 right-0 z-50 ;
+    }
+    .copyright {
+      @apply text-left text-sm text-white ;
+    }
+    .termsandprivacy {
+      @apply text-right text-sm text-white ml-auto hover:underline ;
+    }
   }
+}
+@layer components {
+  @media (min-width: 600px) {
+    .form-container {
+    @apply min-h-screen p-4 flex bg-[url('/images/loginpic.jpg')] opacity-90 bg-cover bg-center bg-fixed justify-center items-center ;
+    }
+    .text{
+    @apply relative top-0 text-4xl text-gray-900 font-bold font-['Roboto'];
+    }
+    .form {
+    @apply mt-1 px-20 py-12 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
+    }
+    .form label {
+    @apply text-xl text-[#1f1f1f] font-bold;
+    }
+    .form input {
+    @apply p-2.5 h-10 w-90 bg-[#737070] border border-gray-900 focus:outline-none rounded-lg;
+    }
+    .form textarea {
+    @apply p-2.5 border rounded-lg resize-none;
+    }
+    .email{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic  border border-gray-900 rounded-lg;
+    }
+    .password{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic  border border-gray-900 rounded-lg ;
+    }
 
-  .AutoDztext {
-    position: relative;
-    left: 8vw;
-    top: 0px;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 1.66rem;
-    color: white;
   }
-  .AutoDzlogo {
-    position: fixed;
-    top: 0.7vh;
-    right : 90.5vw;
-    height: 4vh;
-    width: 6vw;
+}
+@media (min-width: 600px) {
+  .Login {
+    @apply px-4 py-2 w-70  text-gray-200 bg-gray-800 rounded-md hover:bg-gray-900 text-center text-lg font-bold font-['Roboto'];
   }
-  .Home {
-    position: relative;
-    right : 3vw;
-    text-align: center;
-    color: rgb(234, 231, 231);
-    font-family: "Poppins", sans-serif;
+  .goto{
+    @apply text-center text-black underline font-bold ;
   }
-
-
-  .rightimg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .rectangle {
-    position: absolute;
-    left: 72%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 35vw;
-    height: 70vh;
-    background-color: rgb(129, 124, 124);
-    border-radius: 10px;
-    z-index: 10;
-  }
-
-  .overlay {
-    position: relative;
-    width: 100%;
-    padding-top: 2rem;
-  }
-
-  .overlay-text {
-    position: relative;
-    color: #000000;
-    font-weight: bold;
-    right : 3rem;
-    font-family: "Poppins", sans-serif;
-    font-size: 2.5vw;
-    top : 3rem;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .form {
-    position: relative;
-    padding: 2rem 1rem;
-    display: flex;
-    top : 6rem;
-    right : 2rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-
-  .form label {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    display: block;
-  }
-
-  .form input[type="text"],
-  .form input[type="password"] {
-    width: 33rem;
-    max-width: 90%;
-    height: 2.5rem;
-    padding: 0 0.875rem;
-    box-sizing: border-box;
-    font-size: 1rem;
-    background-color: rgba(75, 74, 78, 0.55);
-    color: #000000;
-    border: 1px solid rgba(76, 71, 71, 0.3);
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-  }
-
-  .Loginbutton {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    right : 2vw;
-  }
-
-  .Loginbutton input[type="submit"] {
-    width: 15rem;
-    height: 2.5rem;
-    background-color: #1d1f1d;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .Loginbutton input[type="submit"]:hover {
-    background-color: #3a3a3a;
-  }
-  .bottom {
-    background-color: #141313;
-    position: fixed;
-    margin: 0px;
-    padding: 0px;
-
-    bottom: 0px;
-    width: 100%;
-    height: 5vh;
-  }
-  .textfooter {
-    color: rgb(214, 208, 208);
-    position: relative;
-    top: 1.5vh;
-    left: 5px;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.62rem;
-  }
-
-
 }
 
 
+@layer components {
+  @media (max-width: 600px) {
+    .topbar {
+    @apply flex h-11 items-center gap-1.5 bg-[#181818] px-2 fixed top-0 left-0 right-0 z-50 ;
+    }
+    .home-link {
+      @apply text-center text-white text-sm hover:underline absolute left-1/2 -translate-x-1/2; ;
+    }
+    .logo {
+    @apply w-8 h-5 max-w-full rounded-lg shadow-md;
+    }
+    .AutoDz {
+    @apply text-lg text-white font-bold ;
+    }
 
-
+    .bottombar {
+      @apply flex items-center h-11 bg-[#181818] px-2 fixed bottom-0 left-0 right-0 z-50 ;
+    }
+    .copyright {
+      @apply text-left text-[9px] text-white ;
+    }
+    .termsandprivacy {
+      @apply text-right text-[9px] text-white ml-auto hover:underline ;
+    }
+  }
+}
+@layer components {
+  @media (max-width: 600px) {
+    .form-container {
+    @apply min-h-screen overflow-y-hidden p-4 flex bg-[url('/images/loginpic.jpg')] opacity-90 bg-cover bg-center bg-fixed justify-center items-center ;
+    }
+    .text{
+    @apply text-2xl text-gray-900 font-bold;
+    }
+    .form {
+    @apply mb-12 px-6 py-7 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
+    }
+    .form label {
+    @apply text-xl text-[#1f1f1f] font-bold;
+    }
+    .form input {
+    @apply p-2.5 h-8 w-62 bg-[#737070] border border-gray-900 focus:outline-none rounded-lg;
+    }
+    .form textarea {
+    @apply p-2.5 border rounded-lg resize-none;
+    }
+    .email{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic  border border-gray-900 rounded-lg;
+    }
+    .password{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic  border border-gray-900 rounded-lg ;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .Login {
+    @apply justify-center items-center px-5 py-1.5 w-50  text-gray-200 font-bold bg-gray-800 rounded-md hover:bg-gray-900 text-lg font-['Roboto']; ;
+  }
+  .goto{
+    @apply text-center text-black underline font-bold;
+  }
+}
