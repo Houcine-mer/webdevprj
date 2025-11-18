@@ -1,4 +1,4 @@
-
+// eslint-next-line no-unused-vars
 function validatelgForm(event) {
 
   event.preventDefault();
@@ -32,7 +32,7 @@ function validatelgForm(event) {
   }
   
   if (isValid) {
-    alert('Login successful! Email: ' + email);
+    window.location.href = 'index.html';
 
   }
 }
@@ -41,12 +41,12 @@ function showError(inputId, message) {
   const input = document.getElementById(inputId);
   const errorDiv = document.createElement('div');
   errorDiv.className = 'error-message';
-  errorDiv.style.color = 'red';
+  errorDiv.style.color = '#820c0c';
   errorDiv.style.fontSize = '12px';
   errorDiv.style.marginTop = '5px';
   errorDiv.textContent = message;
   input.parentNode.insertBefore(errorDiv, input.nextSibling);
-  input.style.borderColor = 'red';
+  input.style.borderColor = '#820c0c';
 }
 
 function clearErrors() {
@@ -57,3 +57,10 @@ function clearErrors() {
   document.getElementById('username').style.borderColor = '';
   document.getElementById('password').style.borderColor = '';
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const loginForm = document.getElementById('loginForm');
+  if (loginForm) {
+    loginForm.addEventListener('submit', validatelgForm);
+  }
+});
