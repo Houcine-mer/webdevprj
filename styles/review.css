@@ -6,9 +6,11 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-*{
+
+* {
   box-sizing: border-box;
 }
+
 
 .navbar {
   display: flex;
@@ -44,6 +46,7 @@ body {
   font-weight: bold;
 }
 
+
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -59,6 +62,7 @@ body {
   color: #555;
 }
 
+
 .reviews {
   padding: 50px 80px;
   text-align: center;
@@ -68,6 +72,7 @@ body {
   font-size: 1.8em;
   margin-bottom: 30px;
 }
+
 
 .car-grid {
   display: grid;
@@ -121,6 +126,7 @@ body {
   background: #333;
 }
 
+
 .footer {
   background: #ffffff;
   text-align: center;
@@ -130,3 +136,59 @@ body {
   box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
 }
 
+
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .reviews {
+    padding: 40px 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+ 
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8em;
+  }
+
+  .reviews {
+    padding: 30px 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 1.3em;
+  }
+
+  .hero h1 {
+    font-size: 1.6em;
+  }
+
+  .reviews h2 {
+    font-size: 1.5em;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+}
