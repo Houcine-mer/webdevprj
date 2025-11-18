@@ -69,16 +69,32 @@
     @apply text-xl text-[#1f1f1f] font-bold;
     }
     .form input {
-    @apply p-2.5 h-10 w-90 bg-[#737070] border border-gray-900 rounded-lg;
+    @apply p-2.5 h-10 w-90 bg-[#737070] border border-gray-900 focus:outline-none rounded-lg;
     }
     .form textarea {
     @apply p-2.5 border rounded-lg resize-none;
     }
+    .fullnameplc{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic rounded-lg;
+    }
+    .emailplc{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic rounded-lg;
+    }
+    .passwordplc{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic rounded-lg;
+    }
+    .passwordcnfplc{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic rounded-lg;
+    }
+
   }
 }
 @media (min-width: 600px) {
   .Signup {
     @apply px-4 py-2 w-70  text-gray-200 bg-gray-800 rounded-md hover:bg-gray-900 text-center text-lg font-bold;
+  }
+  .alr{
+    @apply text-lg text-black font-bold underline;
   }
 }
 
@@ -131,10 +147,10 @@
     @apply text-2xl text-gray-900 font-bold;
     }
     .form {
-    @apply mb-12 px-6 py-4 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
+    @apply mb-13 px-6 py-4 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
     }
     .form label {
-    @apply text-xl text-[#1f1f1f] font-bold;
+    @apply text-lg text-[#1f1f1f] font-bold;
     }
     .form input {
     @apply p-2.5 h-8 w-62 bg-[#737070] border border-gray-900 rounded-lg;
@@ -142,10 +158,25 @@
     .form textarea {
     @apply p-2.5 border rounded-lg resize-none;
     }
+    .fullnameplc{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic rounded-lg;
+    }
+    .emailplc{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic rounded-lg;
+    }
+    .passwordplc{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic rounded-lg;
+    }
+    .passwordcnfplc{
+      @apply p-2.5 h-10 w-90 bg-[#737070] placeholder:text-gray-800 text-center text-sm placeholder:italic rounded-lg;
+    }
   }
 }
 @media (max-width: 600px) {
   .Signup {
-    @apply justify-center items-center px-5 py-3 w-50  text-gray-200 font-bold bg-gray-800 rounded-md hover:bg-gray-900 text-lg ;
+    @apply mt-2 mb-1 justify-center items-center px-5 py-2 w-50  text-gray-200 font-bold bg-gray-800 rounded-md hover:bg-gray-900 text-lg ;
+  }
+  .alr{
+    @apply text-center text-black underline font-bold;
   }
 }
