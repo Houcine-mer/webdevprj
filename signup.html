@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/signup.css">
+  <title>Document</title>
+</head>
+<body>
+
+  
+  <div class ="topbar">
+      <img class="logo" src="images/simple-car-silhouette-sticker-u33a0-x450 5.png"> 
+      <h1 class="AutoDz">AutoDz</h1>
+      <a href="index.html" class="home-link mx-auto">Home</a>
+  </div>
+
+  <div class="form-container">
+      <form class="form" id="signupForm" action="input" method="get">
+        <p class="text">Create your Account !</p>
+        <label for ="Username">Full Name</label>
+        <input type="text" id="fullname" class="fullnameplc" placeholder="- Enter your Full Name -" required > 
+        <span id="fullnameError" class="error"></span>
+        <label for="Username">E-mail Address</label> 
+        <input type="email" id="email" class="emailplc" placeholder="- Enter your Email Address -" required />
+        <span id="emailError" class="error"></span>
+        <label for="password">Password</label>
+        <input type="password" id="password" class="passwordplc" placeholder="- Enter your Password -" name="password" required />
+        <span id="passwordError" class="error"></span>
+        <label for ="password">Confirm Password</label>
+        <input type="password" id="confirmpassword" class="passwordcnfplc" placeholder="- Confirm your Password -" required > 
+        <span id="confirmpasswordError" class="error"></span>
+
+        <br />
+      <button type="submit" class= "Signup">Sign Up</button>
+      <p class="already">Already have an account? <a href="Login.html" class="alr">Sign In</a></p>
+      </form>
+  </form>
+  </div>
+  <div class="bottombar">
+    <p class="copyright">© 2024 AutoDz. All rights reserved.</p>
+    <p class="termsandprivacy">
+      <a href="#" class="terms-link">Terms of Service</a> | 
+      <a href="#" class="privacy-link">Privacy Policy</a>
+    </p>
+  </div>
+  <script src="scripts/Signupval.js"></script>
+
+</body>
+</html>
+
