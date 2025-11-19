@@ -113,6 +113,12 @@ function toggleModel() {
     document.getElementById('footer').style.display='none';
     document.getElementById('openID').style.display='none';
     document.getElementById('turnBackID').style.display='flex';
+    menu1.style.visibility = "hidden";
+          setTimeout(() => {
+    menu1.classList.remove('first-active');
+    menu1.classList.add('first-hidden');
+  }, 300);
+   menu1.style.visibility = "visible";
       setTimeout(() => {
     menu2.classList.remove('second-hidden');
     menu2.classList.add('second-active');
