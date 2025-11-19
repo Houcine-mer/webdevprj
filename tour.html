@@ -4,26 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AutoDz Tours | Book Your Car Tour</title>
-  <link rel="stylesheet" href="/styles/tour.css" />
+  <link  rel="stylesheet" href="/styles/tour.css"  >
+  <link  rel="stylesheet" href="/styles/headerStyle.css">
 </head>
 <body>
 
-  
-  <nav class="navbar">
-    <div class="logo">AutoDz</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="review.html">Reviews</a></li>
-      <li><a href="tour.html" class="active">Tours</a></li>
-      <li><a href="CarsList.html">CarsList</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="#">Car Simulation</a></li>
-    </ul>
-    <div class="nav-links">
-      <button style="padding: 10px;"><a href = "Login.html">login</a></button>
-      <button style="padding: 10px;"><a href="signup.html">Sign up</a></button>
+  <div class="header" id="headID">
+
+
+    <div class="left-side">
+      <button class="show-btn" onclick="toggleNav()" id="openID">
+        <p>&#8801;</p>
+      </button>
+      <button class="close-btn" onclick="closeAll()" id="closeID">
+        <p>X</p>
+      </button>
     </div>
-  </nav>
+
+
+    <div class="middle-side">
+      <button class="home-btn">
+        <a href="index.html">HOME</a> 
+      </button>
+        
+      <button class="about-btn">
+        <a href="CarsList.html">CARS</a>
+      </button>
+      <button class="rev-btn">
+        <a href = "review.html" >REVIEWS</a>
+      </button>
+      <button class="about-btn">
+        <a href="About.html">ABOUT</a>
+      </button>
+      <button class="switch-btn" onclick="switchMode()" id="switchID">SWITCH</button>
+    </div>
+
+
+
+    <div class="right-side">
+      <button class="login-btn">
+        <a href="Login.html">LOGIN</a>
+      </button>
+      <button class="sign-btn">
+        <a href="signup.html"> SIGN UP</a>
+      </button>
+    </div>
+  </div>
 
   
   <header class="hero">
@@ -97,5 +123,6 @@
   </footer>
 
   <script src="/scripts/tour.js"></script>
+  <script src="/scripts/headerScript.js"></script>
 </body>
 </html>

@@ -7,21 +7,50 @@
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
           <link href="/styles/index_style.css" rel="stylesheet"> 
+          <link href="/styles/headerStyle.css" rel="stylesheet">
     </head>
     <body>
-        <div class ="topbar">
-                <img class="logo" src="images/simple-car-silhouette-sticker-u33a0-x450 5.png"> 
-                <h1 class="AutoDz">AutoDz</h1>
-                <a  class="a1" href="CarsList.html">Browse</a>&nbsp;&nbsp;&nbsp;
-                <a   class="hidden xl:inline-block absolute text-xl right-[46vw] bottom-[1.5vh] px-4 py-1  text-white font-bold" href="review.html">Reviews</a>&nbsp;&nbsp;&nbsp;
-                <a  class="a3" href="About.html">About</a>
-                <a href="Login.html" class="inline-block absolute right-[1vw] px-5 py-1 bg-gray-800 text-white font-bold rounded-md hover:bg-gray-900 transition duration-300">
-                Login
-                </a>
-                <a href="signup.html" class=" hidden xl:inline-block absolute right-[9vw] px-4 py-1 bg-gray-800 text-white font-bold rounded-md hover:bg-gray-900 transition duration-300">
-                Sign Up
-                </a>
-        </div>
+  <div class="header" id="headID">
+
+
+    <div class="left-side">
+      <button class="show-btn" onclick="toggleNav()" id="openID">
+        <p>&#8801;</p>
+      </button>
+      <button class="close-btn" onclick="closeAll()" id="closeID">
+        <p>X</p>
+      </button>
+    </div>
+
+
+    <div class="middle-side">
+      <button class="home-btn">
+        <a href="CarsList.html">CARS</a> 
+      </button>
+        
+      <button class="about-btn">
+        <a href="tour.html">TOUR</a>
+      </button>
+      <button class="rev-btn">
+        <a href = "review.html" >REVIEWS</a>
+      </button>
+      <button class="about-btn">
+        <a href="About.html">ABOUT</a>
+      </button>
+      <button class="switch-btn" onclick="switchMode()" id="switchID">SWITCH</button>
+    </div>
+
+
+
+    <div class="right-side">
+      <button class="login-btn">
+        <a href="Login.html">LOGIN</a>
+      </button>
+      <button class="sign-btn">
+        <a href="signup.html"> SIGN UP</a>
+      </button>
+    </div>
+  </div>
             
         
         <img src="images/upcoming-trends-in-the-world-of-car-dealerships.jpeg" alt="AutoDz" class="object-cover w-full h-100 opacity=80">
@@ -57,8 +86,8 @@
                         <label for="awd">sunroof</label>
                     <input type="checkbox"><br /><br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
-                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</button>
-                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</button>
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</a>
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
                     </div>
                 </div>
             
@@ -74,8 +103,8 @@
         <label for="nav">nav</label>
         <input type="checkbox"><br /><br />
         <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
-            <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white mb-2 text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</button>
-            <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white mb-2 text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</button>
+            <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white mb-2 text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</a>
+            <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white mb-2 text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
         </div>
     </div>
 
@@ -93,8 +122,8 @@
                         <label for="awd">sunroof</label>
                     <input type="checkbox"><br /><br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
-                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</button>
-                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</button>
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</a>
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
                     </div>
                 </div>
                 <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.75vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg">
@@ -111,8 +140,8 @@
                         <label for="awd">sunroof</label>
                     <input type="checkbox"><br /><br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
-                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</button>
-                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</button>
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</a>
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
                     </div>
                 </div>
             </div>
@@ -178,6 +207,6 @@
         </p>
       </div>
 
-
+    <script src="scripts/headerScript.js"></script>
     </body>
     </html>
