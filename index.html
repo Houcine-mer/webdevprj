@@ -37,72 +37,83 @@
     </div> 
         <div class="flex justify-center sm:mt-[5vh] sm:mb-[5vh] lg:mt-[9vh] lg:mb-[9vh]">
             <h1 class="text-bold text-center mb-[4vh] text-blue-950 text-[2rem] mt-10 lg:mt-1  sm:text[1rem] lg:text[2rem] font-black font-['Poppins']">Featured Cars
-            <p class="text-black opacity-90 text-[1rem] xl-text-[1.5rem] text-center font-['Poppins'] align-left">Discover Our handpicked selection of premium vehicles available for purshase or rental </p>
+            <p class="text-black opacity-90  mt-[2vh] text-[1.25rem] xl-text-[2rem] text-center font-['Poppins'] align-left">Discover Our handpicked selection of premium vehicles available for purshase or rental </p>
             </h1>
         </div>
 
-        <div class="grid_of_cars">
-            <div class="car1">
-                <img style="margin-top: 20px;margin-left: 2px;border-radius:10% " src="images/bwm.jpg" alt="bwm x5" title="bwm x5" width="95%" height="40%">
-                <h3 style="margin-top: 0;">2024 BMW X5</h3>
-                <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$65,900</h2>
-                <p style="margin-top: 0;">or $89/day</p>
-                <label for="awd">awd</label>
-                <input type="checkbox">
-                <label for="awd">leather</label>
-                <input type="checkbox">
-                <label for="awd">nav</label>
-                <input type="checkbox">
-                <label for="awd">sunroof</label>
-                <input type="checkbox">
-                <button class="button5"  onclick="window.location.href='buy_cars.html'">Buy</button>
-            <button class="button6" onclick="window.location.href='rent.html'">Rent</button>
-
-            </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[4vw] py-3 px-4 mr-2 ml-2">
+                <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.5vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg">
+                    <img style="margin-top: 3vh; margin-bottom:1vh ;margin-left: 9px;border-radius:10%" src="images/bwm.jpg" alt="bmw x5" title="bmw x5" width="95%" height="40%">
+                    <h3 class="text-center" style="margin-top: 0;">BMW X5</h3>
+                    <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$65,900</h2>
+                    <p style="margin-top: 0;">or $89/day</p>
+                        <label for="awd">awd</label>
+                        <input type="checkbox">
+                        <label for="awd">leather</label>
+                        <input type="checkbox">
+                        <label for="awd">nav</label>
+                        <input type="checkbox">
+                        <label for="awd">sunroof</label>
+                    <input type="checkbox"><br /><br />
+                    <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
+                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1rem rounded-md hover:bg-gray-950 transition duration-300">Buy</button>
+                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1rem rounded-md hover:bg-gray-950 transition duration-300">Rent</button>
+                    </div>
+                </div>
             
-            <div class="car2"><img style="margin-top: 20px; margin-left: 7px;border-radius:10% " src="images/rs666.jpg" alt="tesla" title="tesla" width="95%" height="40%">
-                <h3 style="margin-top: 0;">AUDI RS6 2025</h3>
-                <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$89,900</h2>
-                <p style="margin-top: 0;">or $89/day</p>
-                <label for="awd">electric</label>
-                <input type="checkbox">
-                <label for="auto_drive">auto_drive</label>
-                <input type="checkbox">
-                <label for="nav">nav</label>
-                <input type="checkbox">
-                
-            <button class="button5"  onclick="window.location.href='buy_cars.html'">Buy</button>
-            <button class="button6" onclick="window.location.href='rent.html'">Rent</button>
-            </div>
-        <div class="car3"><img style="margin-top:20px; margin-left: 7px;border-radius:10% " src="images/a4.jpg" alt="audi" title="audi" width="95%" height="40%">
-                <h3 style="margin-top: 0;">AUDI A4 2024</h3>
-                <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$45,900</h2>
-                <p style="margin-top: 0;">or $69/day</p>
-                <label for="awd">awd</label>
-                <input type="checkbox">
-                <label for="awd">leather</label>
-                <input type="checkbox">
-                <label for="awd">nav</label>
-                <input type="checkbox">
-                <label for="awd">sunroof</label>
-                <input type="checkbox">
-            <button class="button5"  onclick="window.location.href='buy_cars.html'">Buy</button>
-            <button class="button6" onclick="window.location.href='rent.html'">Rent</button>
-            </div>
-                <div class="car4"><img style="margin-top: 20px; margin-left: 7px;border-radius:10%" src="images/ms.jpg" alt="mercedes" title="mercedes" width="95%" height="40%">
-                    <h3 style="margin-top: 0;">Mercedes C class</h3>
-                <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$95,900</h2>
-                <p style="margin-top: 0;">or $79/day</p>
-                <label for="awd">awd</label>
-                <input type="checkbox">
-                <label for="awd">leather</label>
-                <input type="checkbox">
-                <label for="awd">nav</label>
-                <input type="checkbox">
-                <label for="awd">sunroof</label>
-                <input type="checkbox">
-            <button class="button5"  onclick="window.location.href='buy_cars.html'">Buy</button>
-            <button class="button6" onclick="window.location.href='rent.html'">Rent</button>
+    <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.5vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg">
+        <img class="mx-auto" style=" margin-top: 1vh; margin-bottom:1vh ;border-radius:10%" src="images/rs666.jpg" alt="tesla" title="tesla" width="87%" height="30%">
+        <h3 class="text-center" style="margin-top: 0;">AUDI RS6 2025</h3>
+        <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$89,900</h2>
+        <p style="margin-top: 0;">or $89/day</p>
+        <label for="awd">electric</label>
+        <input type="checkbox">
+        <label for="auto_drive">auto_drive</label>
+        <input type="checkbox">
+        <label for="nav">nav</label>
+        <input type="checkbox"><br /><br />
+        <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
+            <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1rem rounded-md hover:bg-gray-950 transition duration-300">Buy</button>
+            <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1rem rounded-md hover:bg-gray-950 transition duration-300">Rent</button>
+        </div>
+    </div>
+
+                <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.5vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg lg:hidden ">
+                    <img style="margin-top: 1vh; margin-bottom:1vh ;margin-left: 9px;border-radius:10%" src="images/a4.jpg" alt="bmw x5" title="bmw x5" width="95%" height="40%">
+                    <h3 class="text-center" style="margin-top: 0;">AUDI A4 2024</h3>
+                    <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$45,900</h2>
+                    <p style="margin-top: 0;">or $69/day</p>
+                        <label for="awd">awd</label>
+                        <input type="checkbox">
+                        <label for="awd">leather</label>
+                        <input type="checkbox">
+                        <label for="awd">nav</label>
+                        <input type="checkbox">
+                        <label for="awd">sunroof</label>
+                    <input type="checkbox"><br /><br />
+                    <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
+                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1rem rounded-md hover:bg-gray-950 transition duration-300">Buy</button>
+                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1rem rounded-md hover:bg-gray-950 transition duration-300">Rent</button>
+                    </div>
+                </div>
+                <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.5vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg">
+                    <img class="mx-auto" style=" margin-bottom:1vh" src="images/ms.jpg" alt="mercedes" title="mercedes" width="87%">
+                    <h3 class="text-center" style="margin-top: 0;">Mercedes C class</h3>
+                    <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$95,900</h2>
+                    <p style="margin-top: 0;">or $79/day</p>
+                        <label for="awd">awd</label>
+                        <input type="checkbox">
+                        <label for="awd">leather</label>
+                        <input type="checkbox">
+                        <label for="awd">nav</label>
+                        <input type="checkbox">
+                        <label for="awd">sunroof</label>
+                    <input type="checkbox"><br /><br />
+                    <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
+                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1rem rounded-md hover:bg-gray-950 transition duration-300">Buy</button>
+                        <button class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1rem rounded-md hover:bg-gray-950 transition duration-300">Rent</button>
+                    </div>
+                </div>
             </div>
         </div>
     <div class="flex justify-center">
