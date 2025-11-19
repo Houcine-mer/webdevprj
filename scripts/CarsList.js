@@ -103,3 +103,7 @@ function showMenu3(){
   document.getElementById("moveID").classList.add("visible");
 
 }
+document.getElementById("AllModelsID").addEventListener("click", async () => {
+   await  toggleNav(); 
+  showMenu2();     
+});
