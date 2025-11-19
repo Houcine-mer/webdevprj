@@ -29,20 +29,20 @@
          <a href="index.html">HOME</a> 
         </button>
         
-        <button class="sim-btn">
-          SIMULATION
+        <button class="about-btn">
+          <a href="tour.html">TOUR</a>
         </button>
         <button class="rev-btn">
           <a href = "review.html" >REVIEWS</a>
         </button>
         <button class="about-btn">
-         ABOUT
+         <a href="About.html">ABOUT</a>
         </button>
         <button class="switch-btn" onclick="switchMode()" id="switchID">SWITCH</button>
       </div>
       <div class="right-side">
         <button class="login-btn">
-          <a href="login.html">LOGIN</a>
+          <a href="Login.html">LOGIN</a>
         </button>
         <button class="sign-btn">
          <a href="signup.html"> SIGN UP</a>
@@ -91,8 +91,8 @@
                       <div>BMW</div>
                       <p>></p>
                   </button>
-                  <button onclick="showCarList('Seat'); showMenu3()">
-                      <div>Seat</div>
+                  <button onclick="showCarList('Volkswagen'); showMenu3()">
+                      <div>Volkswagen</div>
                       <p>></p>
                   </button>
   
@@ -138,7 +138,7 @@
     <div class="main-buttons-title">NEW EXPRIENCE</div>
   </div>
   <div class="main-buttons">
-    <button class="ALL-MODELS">
+    <button class="ALL-MODELS" id="AllModelsID" onclick="toggleModel()">
       All Models
     </button>
     <button class="EXPLORE" onclick="toggleNav()">

@@ -16,36 +16,31 @@ let carData = {
 
     ],
     "Mercedes-benz" : [
-        { "name" :"zf" , "img" :"/images/S6.jpg" , "type" :"both" },
-        { "name" :"", "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" }
+        { "name" :"GLA SUV" , "img" :"/images/GlaSuv.jpg" , "type" :"both" },
+        { "name" :"GLB SUV", "img" :"/images/GLBSUV.jpg" , "type" :"both" },
+        { "name" :"C-Class Sedan" , "img" :"/images/C-class-sedan.avif" , "type" :"buy" },
+        { "name" :"GLC SUV" , "img" :"/images/glc-suv.avif" , "type" :"buy" },
+        { "name" :"E-Class Sedan" , "img" :"/images/E-class-sedan.webp" , "type" :"buy" },
+        { "name" :"GLE SUV" , "img" :"/images/GLESUV.jpg" , "type" :"both" },
+        { "name" :"G-Class" , "img" :"/images/G-Class.jpg" , "type" :"buy" },
+        { "name" :"AMG GT 43" , "img" :"/images/AMG-gt-43.avif" , "type" :"buy" }
     ],
     "BMW" : [
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" : "", "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" }
+        { "name" :"M2" , "img" :"/images/M2.webp" , "type" :"buy" },
+        { "name" : "X4", "img" :"/images/X4.jpg" , "type" :"both" },
+        { "name" :"M3" , "img" :"/images/M3.webp" , "type" :"buy" },
+        { "name" :"M4" , "img" :"/images/M4.webp" , "type" :"buy" },
+        { "name" :"Z4" , "img" :"/images/Z4.avif" , "type" :"both" }
 
     ],
     "Toyota" : [
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" : "", "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" }
+        { "name" :"Corolla" , "img" :"/images/corolla.avif" , "type" :"buy" },
+        { "name" : "BZ4X", "img" :"/images/bz4x.jpg" , "type" :"both" },
+        { "name" :"Land Cruiser" , "img" :"/images/landCruiser.avif" , "type" :"both" }
     ],
-    "Seat" : [
-        { "name" :"" , "img" :"" , "type" :"" },
-        { "name" : "", "img" :"" , "type" :"" },
-        { "name" :"" , "img" :"" , "type" :"" }
+    "Volkswagen" : [
+        { "name" :"Tiguan" , "img" :"/images/tiguan.png" , "type" :"both" },
+        { "name" : "Golf R", "img" :"/images/GolfR.webp" , "type" :"buy" }
 
     ]
 

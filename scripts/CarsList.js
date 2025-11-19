@@ -103,3 +103,24 @@ function showMenu3(){
   document.getElementById("moveID").classList.add("visible");
 
 }
+function toggleModel() {
+    document.getElementById('headID').classList.add("h");
+    document.body.classList.add("h");
+    document.body.classList.add("nav");
+    document.body.style.overflowY = "hidden";
+    const nav = document.getElementById('nav');
+    nav.classList.add('show');
+    document.getElementById('footer').style.display='none';
+    document.getElementById('openID').style.display='none';
+    document.getElementById('turnBackID').style.display='flex';
+    menu1.style.visibility = "hidden";
+          setTimeout(() => {
+    menu1.classList.remove('first-active');
+    menu1.classList.add('first-hidden');
+  }, 300);
+   menu1.style.visibility = "visible";
+      setTimeout(() => {
+    menu2.classList.remove('second-hidden');
+    menu2.classList.add('second-active');
+  }, 300);
+}
