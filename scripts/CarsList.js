@@ -103,3 +103,18 @@ function showMenu3(){
   document.getElementById("moveID").classList.add("visible");
 
 }
+function toggleModel() {
+    document.getElementById('headID').classList.add("h");
+    document.body.classList.add("h");
+    document.body.classList.add("nav");
+    document.body.style.overflowY = "hidden";
+    const nav = document.getElementById('nav');
+    nav.classList.add('show');
+    document.getElementById('footer').style.display='none';
+    document.getElementById('openID').style.display='none';
+    document.getElementById('turnBackID').style.display='flex';
+      setTimeout(() => {
+    menu2.classList.remove('second-hidden');
+    menu2.classList.add('second-active');
+  }, 300);
+}
