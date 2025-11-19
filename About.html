@@ -6,15 +6,52 @@
     <link rel="stylesheet" href="styles/About.css">
     <title>About</title>
     <link rel="icon" href="images/simple-car-silhouette-sticker-u33a0-x450 5.png">
+    <link href="styles/headerStyle.css" rel="stylesheet">
     
   </head>
   <body>
     <br />
-    <div class ="topbar">
-        <img class="logo" src="images/simple-car-silhouette-sticker-u33a0-x450 5.png"> 
-        <h1 class="AutoDz">AutoDz</h1>
-        <a href="index.html" class="home-link mx-auto">Home</a>
+  <div class="header" id="headID">
+
+
+    <div class="left-side">
+      <button class="show-btn" onclick="toggleNav()" id="openID">
+        <p>&#8801;</p>
+      </button>
+      <button class="close-btn" onclick="closeAll()" id="closeID">
+        <p>X</p>
+      </button>
     </div>
+
+
+    <div class="middle-side">
+      <button class="home-btn">
+        <a href="index.html">HOME</a> 
+      </button>
+        
+      <button class="about-btn">
+        <a href="CarsList.html">CARS</a>
+      </button>
+      <button class="rev-btn">
+        <a href = "review.html" >REVIEWS</a>
+      </button>
+      <button class="about-btn">
+        <a href="About.html">ABOUT</a>
+      </button>
+      <button class="switch-btn" onclick="switchMode()" id="switchID">SWITCH</button>
+    </div>
+
+
+
+    <div class="right-side">
+      <button class="login-btn">
+        <a href="Login.html">LOGIN</a>
+      </button>
+      <button class="sign-btn">
+        <a href="signup.html"> SIGN UP</a>
+      </button>
+    </div>
+  </div>
 
     <div class="image">
       <img src="images/image.png" alt="About us image" class="about-image">
@@ -59,6 +96,6 @@
           <a href="#" class="privacy-link">Privacy Policy</a>
         </p>
       </div>
-
+      <script src="scripts/headerScript.js">  </script>
   </body>
 </html>

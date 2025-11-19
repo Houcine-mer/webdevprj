@@ -5,18 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AutoDz — Car Reviews</title>
   <link rel="stylesheet" href="/styles/review.css" />
+  <link href="styles/headerStyle.css" rel="stylesheet">
 </head>
 <body >
 
-  <nav class="navbar">
-    <div class="logo">AutoDz</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="review.html" class="active">Reviews</a></li>
-      <li><a href="tour.html">Tours</a></li>
-      <li><a href="CarsList.html">CarsList</a></li>
-    </ul>
-  </nav>
+  <div class="header" id="headID">
+
+
+    <div class="left-side">
+      <button class="show-btn" onclick="toggleNav()" id="openID">
+        <p>&#8801;</p>
+      </button>
+      <button class="close-btn" onclick="closeAll()" id="closeID">
+        <p>X</p>
+      </button>
+    </div>
+
+
+    <div class="middle-side">
+      <button class="home-btn">
+        <a href="index.html">HOME</a> 
+      </button>
+        
+      <button class="about-btn">
+        <a href="CarsList.html">CARS</a>
+      </button>
+      <button class="rev-btn">
+        <a href = "review.html" >REVIEWS</a>
+      </button>
+      <button class="about-btn">
+        <a href="About.html">ABOUT</a>
+      </button>
+      <button class="switch-btn" onclick="switchMode()" id="switchID">SWITCH</button>
+    </div>
+
+
+
+    <div class="right-side">
+      <button class="login-btn">
+        <a href="Login.html">LOGIN</a>
+      </button>
+      <button class="sign-btn">
+        <a href="signup.html"> SIGN UP</a>
+      </button>
+    </div>
+  </div>
 
   <header class="hero">
     <h1>Car Reviews</h1>
@@ -75,6 +108,6 @@
   <footer class="footer">
     © 2025 AutoDz — All rights reserved.
   </footer>
-
+  <script src="/scripts/headerScript.js"></script>
 </body>
 </html>
