@@ -51,10 +51,10 @@
     }
 
     .rectangle {
-      @apply py-2 bg-gray-800 flex h-[15vh] w-full justify-center  ;
+      @apply py-2 bg-gray-900 flex h-[15vh] w-full justify-center  ;
     }
     .line {
-      @apply  relative bottom-1 left-[5vw] text-center text-gray-900 mt-1 text-4xl font-bold font-['Roboto']   ; 
+      @apply  relative bottom-1 left-[5vw] text-center text-gray-950 mt-1 text-4xl font-bold font-['Roboto']   ; 
     }
     .Contact{
       @apply absolute mt-1 text-white font-bold  text-center text-xl font-['Poppins']  ;
