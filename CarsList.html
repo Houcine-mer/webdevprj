@@ -1,17 +1,16 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html id="htmlID">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/styles/allStyle.css">
-   <link rel="script" href="/scripts/CarsList.js">
-   <link rel="preload" as="image" href="/images/mercedes-black-raobpqc23szwxs7d.jpg">
-   <link rel="preload" as="image" href="/images/dodge-bg.jpeg">
-   <link rel="prefetch" href="/images/dodge-bg.jpeg">
-
-
-</head>
-  <body id="bodyID">
+    <link rel="stylesheet" href="/styles/allStyle.css">
+    <link rel="script" href="/scripts/CarsList.js">
+    <link rel="preload" as="image" href="/images/mercedes-black-raobpqc23szwxs7d.jpg">
+    <link rel="preload" as="image" href="/images/dodge-bg.jpeg">
+    <link rel="prefetch" href="/images/dodge-bg.jpeg">
+  </head>
+  <body>
     <div class="header" id="headID">
+
       <div class="left-side">
         <button class="show-btn" onclick="toggleNav()" id="openID">
           <p>&#8801;</p>
@@ -21,14 +20,13 @@
         </button>
         <button class="turn-back-btn" onclick="turnBack(); update()" id="turnBackID">
           <p>&#x2190;</p>
-        </button>
-        
+        </button>  
       </div>
+
       <div class="middle-side">
         <button class="home-btn">
          <a href="index.html">HOME</a> 
         </button>
-        
         <button class="about-btn">
           <a href="tour.html">TOUR</a>
         </button>
@@ -40,6 +38,7 @@
         </button>
         <button class="switch-btn" onclick="switchMode()" id="switchID">SWITCH</button>
       </div>
+
       <div class="right-side">
         <button class="login-btn">
           <a href="Login.html">LOGIN</a>
@@ -48,114 +47,107 @@
          <a href="signup.html"> SIGN UP</a>
         </button>
       </div>
+
     </div>
     <main>
       <div class="fixed-nav">
         <div class="nav-bar" id="nav">
-            <ul class="first-" id="menu1">
-                <div class="first-phase">
-                    <button onclick="showMenu2()">
-                        <div>Models</div>
-                        <p>></p>
-                    </button>
-                    <button >
-                        <div> Availability </div>
-                        <p >></p>
-                    </button>
-                    <button>
-                        <div >Conditions</div>
-                        <p >></p>
-                    </button>
-                    <button>
-                        <div>Price</div>
-                        <p>></p>
-                    </button>
-                </div>
-  
-            </ul>
-            <ul class="second-hidden" id="menu2">
-              <div class="second-phase">
-                  <button onclick="showCarList('Mercedes-benz'); showMenu3()">
-                      <div>Mercedes-Benz</div>
-                      <p>></p>
-                  </button>
-                  <button onclick="showCarList('Audi'); showMenu3()">
-                      <div> audi </div>
-                      <p >></p>
-                  </button>
-                  <button onclick="showCarList('Toyota'); showMenu3()">
-                       <div >Toyota</div>
-                      <p >></p>
-                  </button>
-                  <button onclick="showCarList('BMW'); showMenu3()">
-                      <div>BMW</div>
-                      <p>></p>
-                  </button>
-                  <button onclick="showCarList('Volkswagen'); showMenu3()">
-                      <div>Volkswagen</div>
-                      <p>></p>
-                  </button>
-  
+
+          <ul class="first-" id="menu1">
+            <div class="first-phase">
+              <button onclick="showMenu2()">
+                <div>Models</div>
+                <p>></p>
+              </button>
+              <button >
+                <div> Availability </div>
+                <p >></p>
+              </button>
+              <button>
+                <div >Conditions</div>
+                <p >></p>
+              </button>
+              <button>
+                <div>Price</div>
+                <p>></p>
+              </button>
+            </div>
+          </ul>
+
+          <ul class="second-hidden" id="menu2">
+            <div class="second-phase">
+              <button onclick="showCarList('Mercedes-benz'); showMenu3()">
+                <div>Mercedes-Benz</div>
+                <p>></p>
+              </button>
+              <button onclick="showCarList('Audi'); showMenu3()">
+                <div> audi </div>
+                <p >></p>
+              </button>
+              <button onclick="showCarList('Toyota'); showMenu3()">
+                <div >Toyota</div>
+                <p >></p>
+              </button>
+              <button onclick="showCarList('BMW'); showMenu3()">
+                <div>BMW</div>
+                <p>></p>
+              </button>
+              <button onclick="showCarList('Volkswagen'); showMenu3()">
+                <div>Volkswagen</div>
+                <p>></p>
+              </button>
+            </div>
+          </ul >
+
+          <ul class="third-hidden" id="menu3">
+            <div class="third-phase" id="thID">
+              <div class="car-container">   
               </div>
-            </ul >
-            <ul class="third-hidden" id="menu3">
-              <div class="third-phase" id="thID">
-                <div class="car-container">
-                  
-                </div>
-                <div class="car-container">
-                  
-                </div>
-                <div class="car-container">
-                  
-                </div>
-                <div class="car-container">
-            
-                </div>
-                <div class="car-container">
-                  
-                </div>
-                <div class="car-container">
-                  
-                </div>
-                <div class="car-container">
-                  
-                </div>
-                <div class="car-container">
-                  
-                </div>
-                </div>
-            </ul>
+              <div class="car-container">                  
+              </div>
+              <div class="car-container">                  
+              </div>
+              <div class="car-container">            
+              </div>
+              <div class="car-container">                  
+              </div>
+              <div class="car-container">                  
+              </div>
+              <div class="car-container">                  
+              </div>
+              <div class="car-container">       
+              </div>
+            </div>
+          </ul>
+
         </div>
       </div>
-                <div class="move-btn" id="moveID">
-                  <button id="previous" >Previous</button>
-                  <button id="next" >Next</button>
-                </div>
-<div class="main-buttons-container" id="footer" >
-  <div class="main-buttons-content">
-    <div class="main-buttons-logo">AutoDZ</div>
-    <div class="main-buttons-title">NEW EXPRIENCE</div>
-  </div>
-  <div class="main-buttons">
-    <button class="ALL-MODELS" id="AllModelsID" onclick="toggleModel()">
-      All Models
-    </button>
-    <button class="EXPLORE" onclick="toggleNav()">
-      Explore
-    </button>
-  </div>
 
-</div>
-    
+      <div class="move-btn" id="moveID">
+        <button id="previous" >Previous</button>
+        <button id="next" >Next</button>
+      </div>
 
+      <div class="main-buttons-container" id="footer" >
+
+        <div class="main-buttons-content">
+          <div class="main-buttons-logo">AutoDZ</div>
+          <div class="main-buttons-title">NEW EXPRIENCE</div>
+        </div>
+
+        <div class="main-buttons">
+          <button class="ALL-MODELS" id="AllModelsID" onclick="toggleModel()">
+            All Models
+          </button>
+        <button class="EXPLORE" onclick="toggleNav()">
+            Explore
+        </button>
+        </div>
+
+      </div>
     </main>
-  <script src="/scripts/CarsList.js"></script>
-
-<script src ="/scripts/database.js"></script>
+    <script src="/scripts/CarsList.js"></script>
+    <script src ="/scripts/database.js"></script>
   </body>
-  
-    
-
 </html>
 
