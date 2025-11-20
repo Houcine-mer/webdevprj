@@ -110,7 +110,6 @@ tourForm.addEventListener("submit", (e) => {
   tourForm.reset();
 });
 
-ELECTION
 
 document.getElementById("city").addEventListener("change", filterTours);
 document.getElementById("car").addEventListener("change", filterTours);

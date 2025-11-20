@@ -1,205 +1,212 @@
+
 <!DOCTYPE html>
 <html lang="eng">
     <head>
         <title>AutoDZ</title>
-        <link rel="icon" href="/webdevproj/images/simple-car-silhouette-sticker-u33a0-x450 5.png">
+        <link rel="icon" href="images/simple-car-silhouette-sticker-u33a0-x450 5.png">
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
           <link href="/styles/index_style.css" rel="stylesheet"> 
+          <link href="/styles/headerStyle.css" rel="stylesheet">
     </head>
     <body>
-        <div class="upper">
-            <img style="display: inline;" src="images/simple-car-silhouette-sticker-u33a0-x450 5.png" width="6%" height="40%">
-           <div style="display: inline;"> <h1  style="display: inline;color: white;">AutoDZ</h1>
-            <div style="display: inline;" class="href1">
-                <a target="_blank" class="a1" href="/buy_cars.html">Buy</a>&nbsp;&nbsp;&nbsp;
-                <a target="_blank" class="a1" href="">Rent</a>&nbsp;&nbsp;&nbsp;
-                <a  target="_blank" class="a1" href="">Reviews</a>&nbsp;&nbsp;&nbsp;
-                <a target="_blank" class="a1" href="About.html">About</a>
-            </div>
-        </div>
-            <div class="login_signup">
-                <a class="button2" href="Login.html">Login</a>              &nbsp;&nbsp;
-                <button class="button2" onclick=" window.location.href='signup.html'" target="_blank">Sign Up</button>
-            </div> 
-        </div>
+  <div class="header" id="headID">
+
+
+    <div class="left-side">
+      <button class="show-btn" onclick="toggleNav()" id="openID">
+        <p>&#8801;</p>
+      </button>
+      <button class="close-btn" onclick="closeAll()" id="closeID">
+        <p>X</p>
+      </button>
+    </div>
+
+
+    <div class="middle-side">
+      <button class="home-btn">
+        <a href="CarsList.html">CARS</a> 
+      </button>
         
-        <div class="div1">
-           <div class="title1">find your perfect car</div>
-           <p class="p1">buy, rent or Review cars with confidence. Discover thousands of vehicles <br> from trusted dealers and owners</p>
-           <div class="div_browse1">
-            <button class="button3"  onclick="window.location.href='browse car.html'">Browse Cars</button>
-            <a class="button4" onclick="window.location.href='rent now.html'">Rent now</a>
-           </div>
-           <div class="div_browse2">
-             <form action="index.html" method="GET" class="search-container">
-    <input type="text" name="q" class="search-input" placeholder="Search..." required>
-    <button type="submit" class="search-btn">🔍</button>
-  </form>
-           </div>
-        <!-- </form> -->
-    </div> 
-        <div style="text-align: center;border-radius: 5%;" class="div2">
-            <h1>Featured Cars</h1>
-            <p>Discover our handpicked selection of premium vehicles available for <br>purchase or rental</p>
-        </div>
-        <div class="grid_of_cars">
-            <div class="car1">
-                <img style="margin-top: 20px;margin-left: 2px;border-radius:10% " src="images/bwm.jpg" alt="bwm x5" title="bwm x5" width="95%" height="40%">
-                <h3 style="margin-top: 0;">2024 BMW X5</h3>
-                <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$65,900</h2>
-                <p style="margin-top: 0;">or $89/day</p>
-                <label for="awd">awd</label>
-                <input type="checkbox">
-                <label for="awd">leather</label>
-                <input type="checkbox">
-                <label for="awd">nav</label>
-                <input type="checkbox">
-                <label for="awd">sunroof</label>
-                <input type="checkbox">
-                <button class="button5"  onclick="window.location.href='buy_cars.html'">Buy</button>
-            <button class="button6" onclick="window.location.href='rent.html'">Rent</button>
+      <button class="about-btn">
+        <a href="tour.html">TOUR</a>
+      </button>
+      <button class="rev-btn">
+        <a href = "review.html" >REVIEWS</a>
+      </button>
+      <button class="about-btn">
+        <a href="About.html">ABOUT</a>
+      </button>
+      <button class="switch-btn" onclick="switchMode()" id="switchID">SWITCH</button>
+    </div>
 
-            </div>
+
+
+    <div class="right-side">
+      <button class="login-btn">
+        <a href="Login.html">LOGIN</a>
+      </button>
+      <button class="sign-btn">
+        <a href="signup.html"> SIGN UP</a>
+      </button>
+    </div>
+  </div>
             
-            <div class="car2"><img style="margin-top: 20px; margin-left: 7px;border-radius:10% " src="images/rs666.jpg" alt="tesla" title="tesla" width="95%" height="40%">
-                <h3 style="margin-top: 0;">AUDI RS6 2025</h3>
-                <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$89,900</h2>
-                <p style="margin-top: 0;">or $89/day</p>
-                <label for="awd">electric</label>
-                <input type="checkbox">
-                <label for="auto_drive">auto_drive</label>
-                <input type="checkbox">
-                <label for="nav">nav</label>
-                <input type="checkbox">
-                
-            <button class="button5"  onclick="window.location.href='buy_cars.html'">Buy</button>
-            <button class="button6" onclick="window.location.href='rent.html'">Rent</button>
-            </div>
-        <div class="car3"><img style="margin-top:20px; margin-left: 7px;border-radius:10% " src="images/a4.jpg" alt="audi" title="audi" width="95%" height="40%">
-                <h3 style="margin-top: 0;">AUDI A4 2024</h3>
-                <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$45,900</h2>
-                <p style="margin-top: 0;">or $69/day</p>
-                <label for="awd">awd</label>
-                <input type="checkbox">
-                <label for="awd">leather</label>
-                <input type="checkbox">
-                <label for="awd">nav</label>
-                <input type="checkbox">
-                <label for="awd">sunroof</label>
-                <input type="checkbox">
-            <button class="button5"  onclick="window.location.href='buy_cars.html'">Buy</button>
-            <button class="button6" onclick="window.location.href='rent.html'">Rent</button>
-            </div>
-                <div class="car4"><img style="margin-top: 20px; margin-left: 7px;border-radius:10%" src="images/ms.jpg" alt="mercedes" title="mercedes" width="95%" height="40%">
-                    <h3 style="margin-top: 0;">Mercedes C class</h3>
-                <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$95,900</h2>
-                <p style="margin-top: 0;">or $79/day</p>
-                <label for="awd">awd</label>
-                <input type="checkbox">
-                <label for="awd">leather</label>
-                <input type="checkbox">
-                <label for="awd">nav</label>
-                <input type="checkbox">
-                <label for="awd">sunroof</label>
-                <input type="checkbox">
-            <button class="button5"  onclick="window.location.href='buy_cars.html'">Buy</button>
-            <button class="button6" onclick="window.location.href='rent.html'">Rent</button>
-            </div>
+        
+        <img src="images/upcoming-trends-in-the-world-of-car-dealerships.jpeg" alt="AutoDz" class="object-cover w-full h-100 opacity=80">
+           <div class="absolute text-white font-bold text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-['Poppins'] top-[12vh] left-[6vw]">Find your perfect car</div>
+        <div class="flex justify-center " >
+           <div class="absolute top-[27vh] xl:top-[34vh] ">
+                <form action="index.html" method="GET" class="search-container">
+                    <input type="text" name="q" class="search-input" placeholder="Search..." required>
+                        <button type="submit" class="h-[4vh]"></button>
+                </form>
+           </div>
         </div>
-        <button class="view" style="border-radius: 10%;">View All Cars </button>
-<br><br><br><br>
-        <div class="gird_for_info">
-            <div class="info1">
-                <img class="logo1" src="images/carlogoblack.png" alt="car_logo">
-                <h3 style="margin-left: 100px;">BUY CARS </h3>
-<p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;">  Browse thousands of new and used
-    cars from certified dealers and private 
-    sellers. Get the best deals with our 
-        price comparison tools.</p>
-
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Certified Dealers </p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  price Comparison</p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Financing Options</p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Warranty Coverge</p>
-            </div>
-            <div class="info1"><img class="logo1" src="images/calblack.png" alt="calander_logo">
-                <h3 style="margin-left: 100px;">RENT CARS </h3>
-<p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;margin-right: 7%;">  Browse thousands of new and used
-   Rent cars for any occasion—from daily commutes to weekend getaways.
-    We offer competitive rates and a seamless rental experience:</p>
        
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Daily & Weekly Rentals. </p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Insurance Included.</p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Roadside Assistance.</p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Easy Booking.</p></div>
-            <div class="info1"><img class="logo1" src="images/d522088840a12319ef5fd79894ceda24f7995951c11b671a42f90dc46f46d2af.jpg"  alt="test logo">
-                <h3 style="margin-left: 100px;">Test Drive </h3>
-<p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;">  
-    Take any car for a few hours to experience its
-     performance and comfort. Test drive multiple vehicles to make 
-     an informed decision before buying:</p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅   2-4 Hour Test Drives </p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Multiple Vehicle Options</p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Professional Guidance</p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Insurance Covered</p></div>
-            <div class="info1"><img class="logo1" src="images/istockphoto-1363836229-612x612.jpg" alt="sumilate_logo">
-                <h3 style="margin-left: 10px;text-align: center;">Driver Experience simulation </h3>
-<p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;">  Book an appointment for a comprehensive driving simulation  .
-     Test vehicle performance in
-      various road and weather conditions safely:</p>
+    </div> 
+        <div class="flex justify-center sm:mt-[5vh] sm:mb-[5vh] lg:mt-[9vh] lg:mb-[9vh]">
+            <h1 class="mt-[4vh] sm:mb-[6vh] lg:mb-[5vh] text-[2rem] lg:text-[3.25rem] text-center font-bold font-['Poppins'] text-3xl text-black opacity-80">Featured Cars
+            <p class="text-black  mt-[2vh] text-[1.25rem] xl-text-[2rem] font-bold text-center font-['Roboto'] align-left">Discover Our handpicked selection of premium vehicles available for purshase or rental </p>
+            </h1>
+        </div>
 
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  VR Simulation </p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Multiple Scenarios</p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Expert Coaching</p>
-       <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 7%;"> ✅  Performance Analysis</p></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[4vw] py-3 px-4 mr-2 ml-2">
+                <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.75vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg">
+                    <img style="margin-top: 3vh; margin-bottom:1vh ;margin-left: 9px;border-radius:10%" src="images/bwm.jpg" alt="bmw x5" title="bmw x5" width="95%" height="40%">
+                    <h3 class="text-center text-xl font-bold font-['Poppins']" style="margin-top: 0;">BMW X5</h3>
+                    <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$65,900</h2>
+                    <p style="margin-top: 0;">or $89/day</p>
+                        <label for="awd">awd</label>
+                        <input type="checkbox">
+                        <label for="awd">leather</label>
+                        <input type="checkbox">
+                        <label for="awd">nav</label>
+                        <input type="checkbox">
+                        <label for="awd">sunroof</label>
+                    <input type="checkbox"><br /><br />
+                    <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</a>
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
+                    </div>
+                </div>
+            
+    <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.75vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg">
+        <img class="mx-auto" style=" margin-top: 1vh; margin-bottom:1vh ;border-radius:10%" src="images/rs666.jpg" alt="tesla" title="tesla" width="87%" height="30%">
+        <h3 class="text-center text-xl font-bold font-['Poppins']"  style="margin-top: 0;">AUDI RS6 2025</h3>
+        <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$89,900</h2>
+        <p style="margin-top: 0;">or $89/day</p>
+        <label for="awd">electric</label>
+        <input type="checkbox">
+        <label for="auto_drive">auto_drive</label>
+        <input type="checkbox">
+        <label for="nav">nav</label>
+        <input type="checkbox"><br /><br />
+        <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
+            <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white mb-2 text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</a>
+            <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white mb-2 text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
+        </div>
+    </div>
+
+                <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.75vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg lg:hidden ">
+                    <img style="margin-top: 1vh; margin-bottom:1vh ;margin-left: 9px;border-radius:10%" src="images/a4.jpg" alt="bmw x5" title="bmw x5" width="95%" height="40%">
+                    <h3 class="text-center text-xl font-bold font-['Poppins']" style="margin-top: 0;">AUDI A4 2024</h3>
+                    <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$45,900</h2>
+                    <p style="margin-top: 0;">or $69/day</p>
+                        <label for="awd">awd</label>
+                        <input type="checkbox">
+                        <label for="awd">leather</label>
+                        <input type="checkbox">
+                        <label for="awd">nav</label>
+                        <input type="checkbox">
+                        <label for="awd">sunroof</label>
+                    <input type="checkbox"><br /><br />
+                    <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</a>
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
+                    </div>
+                </div>
+                <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.75vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg">
+                    <img class="mx-auto" style=" margin-bottom:1vh" src="images/ms.jpg" alt="mercedes" title="mercedes" width="87%">
+                    <h3 class="text-center text-xl font-bold font-['Poppins']" style="margin-top: 0;">Mercedes C class</h3>
+                    <h2 style="margin-top: 0; color: rgb(68, 68, 69);">$95,900</h2>
+                    <p style="margin-top: 0;">or $79/day</p>
+                        <label for="awd">awd</label>
+                        <input type="checkbox">
+                        <label for="awd">leather</label>
+                        <input type="checkbox">
+                        <label for="awd">nav</label>
+                        <input type="checkbox">
+                        <label for="awd">sunroof</label>
+                    <input type="checkbox"><br /><br />
+                    <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Buy</a>
+                        <a class="bg-gray-900 px-[7vw] xl:px-[5vw] py-[0.6vh] text-white text-1.35rem font-bold rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="flex justify-center">
+    <a href="CarsList.html" class="inline-flex mt-10 justify-center items-center px-[6vw] py-2 bg-gray-900 text-white text-[1.25rem] font-bold font-['Poppins'] rounded-md hover:bg-gray-950 transition duration-300">
+        View All Cars
+    </a>
+    </div>
+
+    <br><br><br><br>
+        <h1 class=" sm:mb-[6vh] lg:mb-[14vh] text-[3.25rem] text-center font-bold font-['Poppins'] text-3xl text-black opacity-80 " >Our Services</h1>
+        <div class="grid ustify-center grid-rows-1 grid-cols 1 sm:grid-cols-2 lg:grid-cols-3  gap-[4vw] mr-2 ml-2">
+
+            <div class=" item-center justify-center rounded-md mb-10 lg:mb-[10vh]  ">
+                <h3 class=" mt-[1.7vh] mb-4 text-[1.75rem] text-center font-black text-black font-['Poppins']">Buy Cars</h3>
+                <p class="text-black opacity-90 text-[1.5rem] text-center font-['Poppins'] align-left" >  
+                Browse thousands of new and usedcars from certified dealers and private sellers. Get the best deals with our price comparison tools.</p>
+            </div>
+            <div class=" rounded-md mb-10 lg:mb-[10vh]  ">
+                <h3 class=" mb-4 text-[1.75rem] text-center font-black text-black font-['Poppins']">Rent Cars</h3>
+                    <p class="text-black opacity-90 text-[1.5rem] text-center font-['Poppins'] align-left">  
+                    Browse thousands of new and used
+                    Rent cars for any occasion from daily commutes to weekend getaways.
+                    We offer competitive rates and a seamless rental experience:</p>
+            </div>
+            <div class=" rounded-md mb-10 lg:mb-[10vh]  ">
+                <h3 class=" mb-4 text-[1.75rem] text-center font-black text-black font-['Poppins']">Driver Experience simulation </h3>
+                    <p class="text-black opacity-90 text-[1.5rem] text-center font-['Poppins'] align-left" >  
+                        Book an appointment for a comprehensive driving simulation  .
+                        Test vehicle performance in
+                        various road and weather conditions safely</p>
+            </div>
+            <div class=" rounded-md mb-10 lg:hidden ">
+                <h3 class=" mb-4 text-[1.75rem] text-center font-black text-black font-['Poppins']">Test Drive </h3>
+                    <p class="text-black opacity-90 text-[1.5rem] text-center font-['Poppins'] align-left">  
+                    Take any car for a few hours to experience its
+                    performance and comfort. Test drive multiple vehicles to make 
+                    an informed decision before buying:</p>
+            </div>
+
         </div>
                 
-<div class="grid_of_opinions">
-
-        <div class="op"><img class="logo2" src="images/istockphoto-1948093357-612x612.jpg">100+<br>cars avaidable</div>
-        <div class="op"><img class="logo2" src="images/smileblack.jpg">500+<br>happy costumers</div>
-        <div class="op"><img class="logo2" src="images/marketblack.webp">60+<br>trusted dealers</div>
-        <div class="op"><img class="logo2" src="images/mapblack.png">300+<br>reviews postef</div>
-</div>      
 
 
-        <div class="div_informations">
-            <div style="margin-top: 3%;margin-left: 5%;"><img style="display: inline;" src="images/simple-car-silhouette-sticker-u33a0-x450 5.png" width="6%" height="40%">
-                    <div style="display: inline;"> <h1 style="display: inline;color: white;">AutoDZ</h1></div>
-                    <!-- <div style="margin-top: 3%;font-size: large;text-align: left">
-                        Your ultimate destination for buying, renting, and reviewing cars — where trust meets technology.
-                         Explore thousands of verified listings, compare options,
-                          and drive home your perfect vehicle with total confidence.</div> -->
-            </div>
-
-            <div class="grid_info">
-            <div class="info">
-                <h1 style="font-size: 100%;margin-left:3%">services:</h1>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;" ><a class="a_info" href="">Buy Cars</a><br></p>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;"><a class="a_info" href="">Rent Cars</a><br></p>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;"><a class="a_info" href="">Car Reviews</a><br></p>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;"><a class="a_info" href="">Car Comparison</a><br></p>
-            </div>
-            <div class="info">
-                <h1 style="font-size: 100%;margin-left:3%">support:</h1>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;" ><a class="a_info" href="">Help Center</a><br></p>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;"><a class="a_info" href="">Contact Us</a><br></p>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;"><a class="a_info" href="">Terms of Service</a><br></p>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;"><a class="a_info" href="">Privacy Policy</a><br></p>
-            </div>
-            <div class="info">
-                <h1 style="font-size: 100%;margin-left:3%">contact info:</h1>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;" ><a class="a_info" href="tel:+213668428184">Phone: +213667673321</a><br></p>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;"><a class="a_info" href="mailto:ahmedsol883@gmail.com">Email: info@buycar.com</a><br></p>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;"><a class="a_info" href="">Address: 123 Auto Street, Car City N1 45CC</a><br></p>
-                <p style="margin-left:3%;font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;font-size: 80%;"><a class="a_info" href="">Talk with Us</a><br></p>
-            </div>
-            </div>
+    <div class="rectangle">
+        <div class="line">
+          <p>_____________</p>
         </div>
-        <div class="last_div">
-            <div class="last_info" style="font-size:100%">&copy;</div>
-            <div class="last_info"> 2025 AutoDz . All rights reserved </div>
-            <div class="last_info">Privacy policy | Terms of Service</div>
+        <p class="Contact">Contact And Support</p>
+        <div class="Socials">
+          <img class="facebookicon" src="images/2023_Facebook_icon.svg.png" alt="Facebook Icon">
+          <img class="insticon" src="images/vecteezy_instagram-logo-on-square-style-with-transparent-background_42127166.png" alt="Instagram Icon">
+          <img class="xicon" src="images/x.jpg" alt="Twitter Icon">
         </div>
+        <a href="" class="helpcenter">. Help Center</a>
+      </div>
+      <div class="bottombar">
+        <p class="copyright">© 2024 AutoDz. All rights reserved.</p>
+        <p class="termsandprivacy">
+          <a href="#" class="terms-link">Terms of Service</a> | 
+          <a href="#" class="privacy-link">Privacy Policy</a>
+        </p>
+      </div>
+
+    <script src="scripts/headerScript.js"></script>
     </body>
     </html>

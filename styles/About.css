@@ -32,7 +32,7 @@
       @apply opacity-85 w-[20vw] mb-15 ml-[1vw] mr-3 h-[48vh] rounded-lg shadow-md float-left ;
     }
     .para{
-      @apply relative top-[24vh] mt-[10vh] mb-[50vh] text-3xl font-['Roboto'] ;
+      @apply relative top-[24vh] mt-[10vh] mb-[50vh] text-2xl font-['Roboto'] ;
     }
     .heading{
       @apply absolute text-gray-800 opacity-80 left-[66vw] top-[70vh] text-[2.6rem] font-bold mt-4  font-['Poppins'] ;
@@ -51,10 +51,10 @@
     }
 
     .rectangle {
-      @apply py-2 bg-gray-800 flex h-[15vh] w-full justify-center  ;
+      @apply py-2 bg-gray-900 flex h-[15vh] w-full justify-center  ;
     }
     .line {
-      @apply  relative bottom-1 left-[5vw] text-center text-gray-900 mt-1 text-4xl font-bold font-['Roboto']   ; 
+      @apply  relative bottom-1 left-[5vw] text-center text-gray-950 mt-1 text-4xl font-bold font-['Roboto']   ; 
     }
     .Contact{
       @apply absolute mt-1 text-white font-bold  text-center text-xl font-['Poppins']  ;
