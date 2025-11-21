@@ -3,7 +3,6 @@
 @import "tailwindcss";
 
   @layer base{
-    @media (min-width: 600px) {
       body {
         @apply m-0 p-0 overflow-x-hidden box-border;
         }
@@ -11,222 +10,9 @@
         html { 
           @apply m-0 p-0 overflow-x-hidden;
         }
-    }
   }
-    @layer base{
-    @media (max-width: 600px) {
-      body {
-        @apply m-0 p-0 overflow-x-hidden box-border;
-        }
-        
-        html { 
-          @apply m-0 p-0 overflow-x-hidden;
-        }
-    }
-  }
-@layer components {
-  @media (min-width: 600px) {
-    .topbar {
-      @apply flex h-15  items-center gap-3 bg-[#181818] px-6 fixed top-0 left-0 right-0 z-50 ;
-    }
-    .home-link {
-      @apply text-center text-white text-lg hover:underline absolute left-1/2 -translate-x-1/2; ;
-    }
-    .logo {
-      @apply w-13 h-8 max-w-full rounded-lg shadow-md;
-    }
-    .AutoDz {
-      @apply text-3xl  text-white font-bold font-['Roboto'] ;
-    }
-    
-    .bottombar {
-      @apply flex justify-center items-center h-13 bg-[#181818] px-2 bottom-0 left-0 right-0 z-50 ;
-    }
-    .copyright {
-      @apply text-left text-xs text-white ;
-    }
-    .termsandprivacy {
-      @apply text-right text-xs text-white ml-auto hover:underline ;
-    }
+  
 
-
-
-    .a1{
-      @apply absolute left-[37vw]  text-xl text-white font-bold ;
-    }
-
-    .a3{
-      @apply absolute left-[57vw] text-xl text-white font-bold ;
-    }
-    .btn1{
-      @apply absolute px-10 right-[7vw] text-xl text-white font-bold;
-    }
-    .btn2{
-      @apply absolute right-[1.5vw] text-xl text-black font-bold;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .topbar {
-    @apply flex h-11 items-center gap-1.5 bg-[#181818] px-2 fixed top-0 left-0 right-0 z-50 ;
-    }
-
-    .logo {
-    @apply w-8 h-5 max-w-full rounded-lg shadow-md;
-    }
-    .AutoDz {
-    @apply text-lg text-white font-bold ;
-    }
-
-    .bottombar {
-      @apply flex items-center h-11 bg-[#181818] px-2 bottom-0 left-0 right-0 z-50 ;
-    }
-    .copyright {
-      @apply text-left text-xs text-white ;
-    }
-    .termsandprivacy {
-      @apply text-right text-xs text-white ml-auto hover:underline ;
-    }
-        .a1{
-      @apply absolute left-[37vw]  text-sm text-white font-bold ;
-    }
-
-    .a3{
-      @apply absolute left-[57vw] text-sm text-white font-bold ;
-    }
-    .btn1{
-      @apply absolute px-10 right-[7vw] text-sm text-white font-bold;
-    }
-    .btn2{
-      @apply absolute right-[1.5vw] text-sm text-black font-bold;
-    }
-  }
-}
-@layer components{
-    @media (min-width: 600px) {
-    .rectangle {
-      @apply py-2 bg-gray-900 flex h-[13vh] w-full justify-center  ;
-    }
-    .line {
-      @apply  relative bottom-1 left-[4vw] text-center text-gray-950 mt-1 text-4xl font-bold font-['Roboto']   ; 
-    }
-    .Contact{
-      @apply absolute mt-1 text-white font-bold  text-center text-xl font-['Poppins']  ;
-    }
-    .Socials{
-      @apply flex relative top-4 right-[46vw] items-center justify-center gap-4;
-    }
-    .facebookicon {
-      @apply w-8 h-8 ;
-    }
-    .insticon {
-      @apply w-9 h-9 ;
-    }
-    .xicon {
-      @apply w-8 h-8  ;
-    }
-    .helpcenter {
-      @apply absolute mt-11 right-[10vw] text-white text-[1rem] font-['Roboto'] ;
-    }
-  }
-    @media (max-width: 600px) {
-    .rectangle {
-      @apply  bg-gray-800 flex h-20 w-full justify-center  ;
-    }
-    .line {
-      @apply relative bottom-1 left-[14vw] text-center text-gray-900 mt-1 text-3xl font-bold   ; 
-    }
-    .Contact{
-      @apply absolute mt-1 text-white font-bold  text-center text-lg font-['Poppins']  ;
-    }
-    .Socials{
-      @apply flex relative top-4 right-[52vw] items-center justify-center gap-4;
-    }
-    .facebookicon {
-      @apply w-6 h-6 ;
-    }
-    .insticon {
-      @apply w-6 h-6 ;
-    }
-    .xicon {
-      @apply w-6 h-6  ;
-    }
-    .helpcenter {
-      @apply absolute mt-11 right-[10vw] text-white text-sm font-['Roboto'] ;
-    }
-  }
-}
-
-
-            body {
-                font-family: 'Roboto', sans-serif;
-                background-image: linear-gradient(180deg, #f5f5f5, #dcdcdc, #bfbfbf);
-     
-    }
-
-
-
-
-    .grid_of_cars{
-        display: grid;
-        /* justify-content: center; */
-        grid-template-columns: repeat(4,1fr);
-        gap: 15px;
-    }
-    .car1{
-        height: 88%;
-        /* overflow: scroll; */
-        border-radius: 10%;
-        border: 2px solid gray;
-        border-radius: 10%;
-        transition: height 1s;
-        background-color: rgb(173, 173, 173);
-        padding-bottom: 10px;
-    }
-    .car2{
-        height: 88%;
-        /* overflow: scroll; */
-        border: 2px solid gray;
-        border-radius: 10%;
-        transition: height 1s;
-        background-color: rgb(173, 173, 173);
-        padding-bottom: 10px;
-
-    }
-    .car3{
-        height: 88%;
-        /* overflow: scroll; */
-        border: 2px solid gray;
-        border-radius: 10%;
-        transition: height 1s;
-        background-color:rgb(173, 173, 173);
-        padding-bottom: 10px;
-    }
-    .car4{
-        height: 88%;
-        /* overflow: scroll; */
-        border: 2px solid gray;
-        border-radius: 10%;
-        transition: height 1s;
-        background-color:rgb(173, 173, 173);
-        padding-bottom: 10px;
-    }
-    .car1:hover{
-        box-shadow: 3px 3px 40px black;
-        height: 100%;
-    }
-    .car2:hover{
-        box-shadow: 3px 3px 40px black;
-        height: 100%;
-    }
-    .car3:hover{
-        box-shadow: 3px 3px 40px black;
-        height: 100%;
-    }
-    .car4:hover{
-        box-shadow: 3px 3px 40px black;
-        height: 100%;
-    }
 
 
     .search-container {
@@ -248,7 +34,6 @@
       box-shadow: 0 0 25px rgba(0, 191, 255, 0.2);
     }
 
-    /* ===== Input Field ===== */
     .search-input {
       flex: 1;
       background: transparent;
@@ -259,7 +44,6 @@
       padding: 8px;
     }
 
-    /* ===== Search Button ===== */
     .search-btn {
       background-color: gray;
       border: none;
