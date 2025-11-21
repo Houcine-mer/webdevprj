@@ -43,12 +43,21 @@
     }
 
     .bottombar {
-      @apply flex items-center h-10 bg-[#181818] px-6 fixed bottom-0 left-0 right-0 z-50 ;
+      @apply flex items-center h-12 bg-[#ffffff] opacity-50 px-6 fixed bottom-0 left-0 right-0 z-50 ;
     }
     .copyright {
-      @apply text-left text-sm text-white ;
+      @apply text-left text-sm text-black ;
     }
     .termsandprivacy {
+      @apply text-right text-sm text-black ml-auto hover:underline ;
+    }
+  .bottombar.dark{
+    @apply flex items-center h-12 bg-[#000000] px-6 fixed bottom-0 left-0 right-0 z-50 ;
+    }
+    .copyright.dark{
+      @apply text-left text-sm text-white ;
+    }
+    .termsandprivacy.dark{
       @apply text-right text-sm text-white ml-auto hover:underline ;
     }
   }
@@ -58,13 +67,17 @@
 @layer components {
   @media (min-width: 600px) {
     .form-container {
-    @apply min-h-screen p-4 flex bg-[url('/images/loginpic.jpg')] opacity-90 bg-cover bg-center bg-fixed justify-center items-center ;
+      @apply min-h-screen p-4 flex bg-[url('/images/upcoming-trends-in-the-world-of-car-dealerships.jpeg')] opacity-100 bg-cover bg-center bg-fixed justify-center items-center;
+    }
+    
+    .form-container.dark {
+      @apply bg-[url('/images/mercedes-black-raobpqc23szwxs7d.jpg')];
     }
     .text{
     @apply mb-[1vh] text-3xl text-gray-900 font-bold;
     }
     .form {
-    @apply mt-2 px-20 py-3 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
+    @apply mt-4 px-20 py-1 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
     }
     .form label {
     @apply text-lg text-[#1f1f1f] font-bold;
@@ -142,12 +155,21 @@
     }
 
     .bottombar {
-      @apply flex items-center h-11 bg-[#181818] px-2 fixed bottom-0 left-0 right-0 z-50 ;
+      @apply flex items-center h-11 bg-[#ffffff] opacity-65 px-2 fixed bottom-0 left-0 right-0 z-50 ;
     }
     .copyright {
-      @apply text-left text-[9px] text-white ;
+      @apply text-left text-[9px] text-black ;
     }
     .termsandprivacy {
+      @apply text-right text-[9px] text-black ml-auto hover:underline ;
+    }
+    .bottombar.dark {
+      @apply flex items-center h-11 bg-[#000000] opacity-65 px-2 fixed bottom-0 left-0 right-0 z-50 ;
+    }
+    .copyright.dark {
+      @apply text-left text-[9px] text-white ;
+    }
+    .termsandprivacy.dark {
       @apply text-right text-[9px] text-white ml-auto hover:underline ;
     }
 
@@ -158,13 +180,16 @@
 @layer components {
   @media (max-width: 600px) {
     .form-container {
-    @apply min-h-screen overflow-y-hidden p-4 flex bg-[url('/images/loginpic.jpg')] opacity-90 bg-cover bg-center bg-fixed justify-center items-center ;
+    @apply min-h-screen overflow-y-hidden p-4 flex bg-[url('/images/upcoming-trends-in-the-world-of-car-dealerships.jpeg')] opacity-90 bg-cover bg-center bg-fixed justify-center items-center ;
+    }
+    .form-container.dark {
+    @apply bg-[url('/images/mercedes-black-raobpqc23szwxs7d.jpg')];
     }
     .text{
     @apply mb-[1vh] text-2xl text-gray-900 font-bold;
     }
     .form {
-    @apply mb-14 px-6 py-3 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
+    @apply mb-9 px-6 py-2 max-w-3xl flex bg-[#b0b0b064] flex-col items-center gap-2 rounded-md shadow-md;
     }
     .form label {
     @apply text-[1rem] text-[#1f1f1f] font-bold;
