@@ -15,57 +15,6 @@
 
 
 
-    .search-container {
-      position: relative;
-      width: 40vw;
-      display: flex;
-      align-items: center;
-      background-color: white;
-      border: 2px solid #333;
-      border-radius: 30px;
-      padding: 10px 20px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
-      transition: all 0.3s ease;
-      margin-left: 9%;
-    }
-
-    .search-container:hover {
-      border-color: white;
-      box-shadow: 0 0 25px rgba(0, 191, 255, 0.2);
-    }
-
-    .search-input {
-      flex: 1;
-      background: transparent;
-      border: none;
-      outline: none;
-      color: gray;
-      font-size: 18px;
-      padding: 8px;
-    }
-
-    .search-btn {
-      background-color: gray;
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      color: gray;
-      font-size: 18px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-    }
-
-    .search-btn:hover {
-      background-color: black;
-      transform: scale(1.1);
-    }
-
-
-
 
  
 
