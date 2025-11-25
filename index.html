@@ -10,12 +10,31 @@
           <link href="/styles/headerlp.css" rel="stylesheet">
     </head>
   <body>
+    <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2 class="text-2xl font-bold text-white">AutoDZ</h2>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="sidebar-link">
+        Home
+      </a>
+      <a href="About.html" class="sidebar-link">
+        About
+      </a>
+      <a href="review.html" class="sidebar-link">
+        Reviews
+      </a>
+    </nav>
+  </div>
+
+    <div class="sidebar-overlay" id="overlay" onclick="closeNav()"></div>
+    
       <div class="header" id="headID" >
         <div class="left-side">
-          <button class="show-btn" onclick="toggleNav()" id="openID">
+          <button class="show-btn" onclick="openNav()" id="openID">
             <p>&#8801;</p>
           </button>
-          <button class="close-btn" onclick="closeAll()" id="closeID">
+          <button class="close-btn" onclick="cloneNav()" id="closeID">
             <p>X</p>
           </button>
         </div>
@@ -208,6 +227,6 @@
         </p>
       </div>
 
-    <script src="scripts/headerScript.js"></script>
+    <script src="scripts/headerlps.js"></script>
   </body>
 </html>
