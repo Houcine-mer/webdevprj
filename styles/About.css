@@ -16,6 +16,13 @@
 }
 @layer components {
   @media (min-width: 600px) {
+    .mid {
+      @apply bg-[#ffffff] ;
+    }
+    .mid.dark{
+      @apply bg-[#181818] ;
+    }
+
     .About-text {
       @apply  absolute top-[9vh] left-[10vw] text-[3rem] font-bold text-center text-white mb-8 font-['Poppins'] ;
     }
@@ -34,8 +41,14 @@
     .para{
       @apply relative top-[24vh] mt-[10vh] mb-[50vh] text-2xl font-['Roboto'] ;
     }
+    .para.dark{
+      @apply text-white ;
+    }
     .heading{
       @apply absolute text-gray-800 opacity-80 left-[66vw] top-[70vh] text-[2.6rem] font-bold mt-4  font-['Poppins'] ;
+    }
+    .heading.dark{
+      @apply text-white opacity-60;
     }
     .ourmissionimg {
       @apply opacity-85 w-[20vw] mb-15 ml-3 mr-[1vw] h-[50vh] rounded-lg shadow-md float-right  ;
@@ -46,8 +59,14 @@
     .para2{
       @apply relative top-15 ml-3 mr-2 mb-15 text-2xl font-['Roboto'] ;
     }
+    .para2.dark{
+      @apply text-white ;
+    }
     .heading2{
       @apply relative top-[1vh] text-[2.75rem] text-gray-800 opacity-80 font-bold ml-[5vw] mt-4 mb-1 font-['Poppins'] ;
+    }
+    .heading2.dark{
+      @apply text-white opacity-60 ;
     }
 
     .rectangle {
@@ -118,6 +137,14 @@
 }
 @layer components {
   @media (max-width: 600px) {
+
+    .mid {
+      @apply bg-[#ffffff] ;
+    }
+    .mid.dark{
+      @apply bg-[#181818] ;
+    }
+
     .About-text {
       @apply  absolute top-27 left-10 text-[35px] font-bold text-center text-white mb-8 font-['Poppins'] ;
     }
@@ -136,8 +163,14 @@
     .para{
       @apply mb-25 text-sm font-['Roboto'] ;
     }
+    .para.dark{
+      @apply text-white ;
+    }
     .heading{
       @apply absolute text-gray-800 opacity-90 left-[58vw] top-109 text-[22px] font-bold mt-4 mb-4 font-['Poppins'] ;
+    }
+    .heading.dark{
+      @apply text-white opacity-60;
     }
     .ourmissionimg {
       @apply opacity-85 w-[45vw] mb-15 ml-2 mr-2 h-[29vh] rounded-lg shadow-md float-right  ;
@@ -148,8 +181,14 @@
     .para2{
       @apply ml-3 mb-15 text-sm font-['Roboto'] ;
     }
+    .para2.dark{
+      @apply text-white ;
+    }
     .heading2{
       @apply text-gray-800 text-[22px] font-bold ml-[5vw] mt-4 mb-1 font-['Poppins'] ;
+    }
+    .heading2.dark{
+      @apply text-white opacity-60; 
     }
 
     .rectangle {
