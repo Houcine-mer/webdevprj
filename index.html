@@ -2,12 +2,14 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AutoDZ</title>
         <link rel="icon" href="images/simple-car-silhouette-sticker-u33a0-x450 5.png">
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
           <link href="/styles/index_style.css" rel="stylesheet"> 
-          <link href="/styles/headerlp.css" rel="stylesheet">
+          <link href="/styles/headerStyle.css" rel="stylesheet">
+          
     </head>
   <body>
     <div class="sidebar" id="sidebar">
@@ -31,10 +33,10 @@
     
       <div class="header" id="headID" >
         <div class="left-side">
-          <button class="show-btn" onclick="openNav()" id="openID">
+          <button class="show-btn" onclick="toggleNav()" id="openID">
             <p>&#8801;</p>
           </button>
-          <button class="close-btn" onclick="cloneNav()" id="closeID">
+          <button class="close-btn" onclick="closeAll()" id="closeID">
             <p>X</p>
           </button>
         </div>
@@ -99,14 +101,7 @@
                     <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']" style="margin-top: 0;">BMW X5</h3>
                     <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$65,900</h2>
                     <p style="margin-top: 0;">or $89/day</p>
-                        <label for="awd">awd</label>
-                        <input type="checkbox">
-                        <label for="awd">leather</label>
-                        <input type="checkbox">
-                        <label for="awd">nav</label>
-                        <input type="checkbox">
-                        <label for="awd">sunroof</label>
-                    <input type="checkbox"><br /><br />
+                    <br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
                         <a class="bg-gray-900 px-[11vw] lg:px-[5vw] py-[0.6vh] text-white text-[1rem] sm:text-[1.5rem] md:text-[1.66rem] lg:text-[1rem] font-bold font['Poppins'] rounded-md hover:bg-gray-950 transition duration-300">Buy</a>
                         <a class="bg-gray-900 px-[11vw] lg:px-[5vw] py-[0.6vh] text-white text-[1rem] sm:text-[1.5rem] md:text-[1.66rem] lg:text-[1rem]  font-bold font['Poppins'] rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
@@ -117,12 +112,7 @@
                     <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']"  style="margin-top: 0;">AUDI RS6 2025</h3>
                     <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$89,900</h2>
                     <p style="margin-top: 0;">or $89/day</p>
-                    <label for="awd">electric</label>
-                    <input type="checkbox">
-                    <label for="auto_drive">auto_drive</label>
-                    <input type="checkbox">
-                    <label for="nav">nav</label>
-                    <input type="checkbox"><br /><br />
+                    <br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
                         <a class="bg-gray-900 px-[11vw] lg:px-[5vw] py-[0.6vh] text-white text-[1rem] sm:text-[1.5rem] md:text-[1.66rem] lg:text-[1rem] font-bold font['Poppins'] rounded-md hover:bg-gray-950 transition duration-300">Buy</a>
                         <a class="bg-gray-900 px-[11vw] lg:px-[5vw] py-[0.6vh] text-white text-[1rem] sm:text-[1.5rem] md:text-[1.66rem] lg:text-[1rem] font-bold font['Poppins'] rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
@@ -133,14 +123,7 @@
                     <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']" style="margin-top: 0;">AUDI A4 2024</h3>
                     <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$45,900</h2>
                     <p style="margin-top: 0;">or $69/day</p>
-                        <label for="awd">awd</label>
-                        <input type="checkbox">
-                        <label for="awd">leather</label>
-                        <input type="checkbox">
-                        <label for="awd">nav</label>
-                        <input type="checkbox">
-                        <label for="awd">sunroof</label>
-                    <input type="checkbox"><br /><br />
+                    <br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
                         <a class="bg-gray-900 px-[11vw] lg:px-[5vw] py-[0.6vh] text-white text-[1rem] sm:text-[1.5rem] md:text-[1.66rem] lg:text-[1rem] font-bold font['Poppins'] hover:bg-gray-950 transition duration-300">Buy</a>
                         <a class="bg-gray-900 px-[11vw] lg:px-[5vw] py-[0.6vh] text-white text-[1rem] sm:text-[1.5rem] md:text-[1.66rem] lg:text-[1rem] font-bold font['Poppins'] hover:bg-gray-950 transition duration-300">Rent</a>
@@ -151,14 +134,7 @@
                     <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']" style="margin-top: 0;">Mercedes C class</h3>
                     <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$95,900</h2>
                     <p style="margin-top: 0;">or $79/day</p>
-                        <label for="awd">awd</label>
-                        <input type="checkbox">
-                        <label for="awd">leather</label>
-                        <input type="checkbox">
-                        <label for="awd">nav</label>
-                        <input type="checkbox">
-                        <label for="awd">sunroof</label>
-                    <input type="checkbox"><br /><br />
+                    <br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
                         <a class="bg-gray-900 px-[11vw] lg:px-[5vw] py-[0.6vh] text-white text-[1rem] sm:text-[1.5rem] md:text-[1.66rem] lg:text-[1rem] font-bold font['Poppins'] hover:bg-gray-950 transition duration-300">Buy</a>
                         <a class="bg-gray-900 px-[11vw] lg:px-[5vw] py-[0.6vh] text-white text-[1rem] sm:text-[1.5rem] md:text-[1.66rem] lg:text-[1rem] font-bold font['Poppins'] hover:bg-gray-950 transition duration-300">Rent</a>
@@ -227,6 +203,6 @@
         </p>
       </div>
 
-    <script src="scripts/headerlps.js"></script>
+    <script src="scripts/headerScript.js"></script>
   </body>
 </html>
