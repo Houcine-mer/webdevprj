@@ -8,29 +8,28 @@
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
           <link href="/styles/index_style.css" rel="stylesheet"> 
-          <link href="/styles/headerStyle.css" rel="stylesheet">
-          
+          <link href="/styles/headerStyle.css" rel="stylesheet"> 
     </head>
   <body>
     <div class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <h2 class="text-2xl font-bold text-white">AutoDZ</h2>
+      <div class="sidebar-header">
+        <h2 class="text-2xl font-bold text-white">AutoDZ</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="index.html" class="sidebar-link">
+          Home
+        </a>
+        <a href="About.html" class="sidebar-link">
+          About
+        </a>
+        <a href="review.html" class="sidebar-link">
+          Reviews
+        </a>
+      </nav>
     </div>
-    <nav class="sidebar-nav">
-      <a href="index.html" class="sidebar-link">
-        Home
-      </a>
-      <a href="About.html" class="sidebar-link">
-        About
-      </a>
-      <a href="review.html" class="sidebar-link">
-        Reviews
-      </a>
-    </nav>
-  </div>
 
     <div class="sidebar-overlay" id="overlay" onclick="closeNav()"></div>
-    
+
       <div class="header" id="headID" >
         <div class="left-side">
           <button class="show-btn" onclick="toggleNav()" id="openID">
@@ -65,6 +64,7 @@
           </button>
         </div>
       </div>
+   
             
       <div class="image-container">  
         <img src="images/upcoming-trends-in-the-world-of-car-dealerships.jpeg" alt="AutoDz" class="object-cover h-100 w-full md:h-[40vh] lg:h-[60vh]  opacity=80">
@@ -77,14 +77,13 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                             </svg>
                             <input type="text" name="q" class="w-[95vw] sm:w-[80vw] md:w-[90vw] lg:w-full h-[7vh] md:h-[4vh] lg:h-[8vh]  pl-12 pr-28 py-3 md:py-4 text-gray-700 bg-white/95 backdrop-blur-sm rounded-full border-2 border-transparent focus:border-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 shadow-xl transition-all duration-300 placeholder:text-gray-400 text-sm md:text-base" placeholder="Search for cars, brands, models..." required>
-                            <button 
-                                type="submit" class="absolute right-2 px-4 md:px-6 py-2 md:py-2.5 bg-gray-800 hover:bg-gray-900 text-white font-semibold rounded-full transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 text-sm md:text-base">Search
-                            </button>
+                              <button 
+                                  type="submit" class="absolute right-2 px-4 md:px-6 py-2 md:py-2.5 bg-gray-800 hover:bg-gray-900 text-white font-semibold rounded-full transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 text-sm md:text-base">Search
+                              </button>
                         </div>
                     </form>
                 </div>
             </div>
-
       </div> 
        
     
