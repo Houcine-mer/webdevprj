@@ -20,7 +20,7 @@ class UsersController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return response() -> json(['errors'=> $validator->errors(),422]);
+            return response()->json(['errors'=> $validator->errors()], 422);
         }   
 
         $user = User::create([
@@ -37,28 +37,29 @@ class UsersController extends Controller
         ],201);
     }
     ///
-        public function login(Request $request)
-    {
-        $request->validate ([
-            'email'=> 'required|email|unique:users,email',
-            'password'=> 'required|string|max:12|min:8',
-        ]);
+public function login(Request $request)
+{
+    $request->validate([
+        'email'    => 'required|email',
+        'password' => 'required|string|max:12|min:8',
+    ]);
 
-        $user = User::where('email',$request->email)->first();
-        if(!$user){
-            return response()->json(['error'=>'Invalid Email'],401);
-        }
-        elseIf(!Hash::check($request->password, $user->password)){
-            return response()->json(['error'=> 'Incorrect Password'],401);
-        }
-
-        $token = JWTAuth::fromUser($user);
-
-        return response()->json(['message'=>'Login Successful' ,
-            'user'=>$user->makeHidden(['password']),
-            'token'=>$token
-        ],201);
+    $user = User::where('email', $request->email)->first();
+    if (!$user) {
+        return response()->json(['error' => 'Invalid Email'], 401);
+    } elseif (!Hash::check($request->password, $user->password)) {
+        return response()->json(['error' => 'Incorrect Password'], 401);
     }
+
+    $token = JWTAuth::fromUser($user);
+
+    return response()->json([
+        'message' => 'Login Successful',
+        'user'    => $user->makeHidden(['password']),
+        'token'   => $token,
+    ], 200);
+}
+
 
     ///
     public function dashboard(Request $request)
@@ -89,7 +90,7 @@ class UsersController extends Controller
             }
 
             JWTAuth::invalidate($token);
-            return response()->json(['message'=>'Log Out Seccessful'],401);
+            return response()->json(['message'=>'Logout Successful'],200);
 
         }
         catch(\Tymon\JWTAuth\Exceptions\JWTException $e){

@@ -67,11 +67,11 @@
 @layer components {
   @media (min-width: 600px) {
     .form-container {
-      @apply min-h-screen p-4 flex bg-[url('/images/upcoming-trends-in-the-world-of-car-dealerships.jpeg')] opacity-100 bg-cover bg-center bg-fixed justify-center items-center;
+      @apply min-h-screen p-4 flex bg-[url('/laravel11-carstore-proj/public/images/upcoming-trends-in-the-world-of-car-dealerships.jpeg')] opacity-100 bg-cover bg-center bg-fixed justify-center items-center;
     }
     
     .form-container.dark {
-      @apply bg-[url('/images/mercedes-black-raobpqc23szwxs7d.jpg')];
+      @apply bg-[url('/laravel11-carstore-proj/public/images/mercedes-black-raobpqc23szwxs7d.jpg')];
     }
     .text{
     @apply mb-[1vh] text-3xl text-gray-900 font-bold;
@@ -180,10 +180,10 @@
 @layer components {
   @media (max-width: 600px) {
     .form-container {
-    @apply min-h-screen overflow-y-hidden p-4 flex bg-[url('/images/upcoming-trends-in-the-world-of-car-dealerships.jpeg')] opacity-90 bg-cover bg-center bg-fixed justify-center items-center ;
+    @apply min-h-screen overflow-y-hidden p-4 flex bg-[url('/laravel11-carstore-proj/public/images/upcoming-trends-in-the-world-of-car-dealerships.jpeg')] opacity-90 bg-cover bg-center bg-fixed justify-center items-center ;
     }
     .form-container.dark {
-    @apply bg-[url('/images/mercedes-black-raobpqc23szwxs7d.jpg')];
+    @apply bg-[url('/laravel11-carstore-proj/public/images/mercedes-black-raobpqc23szwxs7d.jpg')];
     }
     .text{
     @apply mb-[1vh] text-2xl text-gray-900 font-bold;

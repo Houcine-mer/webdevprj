@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 :root {
-  --hero-dark: url("/images/mercedes-black-raobpqc23szwxs7d.jpg");
-  --hero-light: url("/images/dodge-bg.jpeg"); 
+  --hero-dark: url("/laravel11-carstore-proj/public/images/mercedes-black-raobpqc23szwxs7d.jpg");
+  --hero-light: url("/laravel11-carstore-proj/public/images/dodge-bg.jpeg"); 
   --head-bg:rgba(255,255,255,0.7);
   --button-color:#555;
   --nav-SCT-btn-color:#555;
@@ -49,9 +49,9 @@ body.dark{
   --body-bg-color:white;
   --car-bg:rgb(21, 20, 20);
   --img-border:0px;
-  --body-img:url("/images/mercedes-black-raobpqc23szwxs7d.jpg");
-  --hero-dark: url("/images/mercedes-black-raobpqc23szwxs7d.jpg");
-  --hero-light: url("/images/dodge-bg.jpeg");  
+  --body-img:url("/laravel11-carstore-proj/public/images/mercedes-black-raobpqc23szwxs7d.jpg");
+  --hero-dark: url("/laravel11-carstore-proj/public/images/mercedes-black-raobpqc23szwxs7d.jpg");
+  --hero-light: url("/laravel11-carstore-proj/public/images/dodge-bg.jpeg");  
   --hero-image: var(--hero-dark);
   --car-shadow: none;
   --explore-bgcolor-h:var(var(--explore-bgcolor));
