@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npx tailwindcss -i styles/input.css -o ./laravel11-carstore-proj/public/styles/output.css --watch",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -24,6 +24,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
-    "vite": "^7.2.2"
+    "vite": "^7.2.2",
+    "tailwindcss": "^3.4.0"
   }
 }
