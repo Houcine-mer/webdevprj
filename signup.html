@@ -56,6 +56,8 @@
   <div class="form-container">
       <form class="form" id="signupForm" action="input" method="get">
         <p class="text">Create your Account !</p>
+        <div id="error-message" style="display: none; background-color: #fee; color: #c33; padding: 12px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #c33; font-size: 14px;"></div>
+        <div id="success-message" style="display: none; background-color: #efe; color: #3c3; padding: 12px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #3c3; font-size: 14px;"></div>
         <label for ="Username">Full Name</label>
         <input type="text" id="fullname" class="fullnameplc" placeholder="- Enter your Full Name -" required > 
         <span id="fullnameError" class="error"></span>
@@ -71,6 +73,7 @@
 
         <br />
       <button type="submit" class= "Signup">Sign Up</button>
+      <div class="loading" id="loading" style="display: none; text-align: center; margin-top: 10px; color: #667eea; font-size: 14px;">Creating your account...</div>
       <p class="already">Already have an account? <a href="Login.html" class="alr">Sign In</a></p>
       </form>
   </form>
@@ -84,7 +87,105 @@
   </div>
   <script src="scripts/Signupval.js"></script>
   <script src="scripts/headerScript.js"> </script>
+  <script src="/public/js/auth.js"></script>
+  <script>
+    redirectIfAuthenticated('home.html');
 
+    const signupForm = document.getElementById('signupForm');
+    const signupBtn = document.getElementById('signup-btn');
+    const loadingDiv = document.getElementById('loading');
+
+    function clearFieldError(fieldId) {
+      const errorElement = document.getElementById(fieldId + 'Error');
+      if (errorElement) errorElement.textContent = '';
+    }
+
+    function displayFieldError(fieldId, message) {
+      const errorElement = document.getElementById(fieldId + 'Error');
+      if (errorElement) errorElement.textContent = message;
+    }
+
+    signupForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      clearError('error-message');
+      clearError('success-message');
+      clearFieldError('fullname');
+      clearFieldError('email');
+      clearFieldError('password');
+      clearFieldError('confirmpassword');
+      
+      const name = document.getElementById('fullname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmpassword').value;
+      
+      let hasError = false;
+
+      if (!name || name.length > 255) {
+        displayFieldError('fullname', name ? 'Name too long' : 'Name required');
+        hasError = true;
+      }
+
+      if (!email) {
+        displayFieldError('email', 'Email is required');
+        hasError = true;
+      }
+
+      if (!password || password.length < 8 || password.length > 12) {
+        displayFieldError('password', 'Password must be 8-12 characters');
+        hasError = true;
+      }
+
+      if (password !== confirmPassword) {
+        displayFieldError('confirmpassword', 'Passwords do not match');
+        hasError = true;
+      }
+
+      if (hasError) {
+        displayError('error-message', 'Please fix the errors above');
+        return;
+      }
+      
+      signupBtn.disabled = true;
+      loadingDiv.style.display = 'block';
+      
+      try {
+        const result = await register(name, email, password);
+        
+        if (result.success) {
+          displaySuccess('success-message', 'Account created successfully! Redirecting...');
+          setTimeout(() => {
+            window.location.href = 'home.html';
+          }, 1500);
+        } else {
+          let errorMessage = result.error;
+          
+          if (errorMessage.includes('email') && errorMessage.includes('unique')) {
+            errorMessage = 'This email is already registered. Please use a different email or login.';
+            displayFieldError('email', 'Email already exists');
+          }
+          
+          displayError('error-message', errorMessage);
+          signupBtn.disabled = false;
+          loadingDiv.style.display = 'none';
+        }
+      } catch (error) {
+        displayError('error-message', 'An unexpected error occurred. Please try again.');
+        signupBtn.disabled = false;
+        loadingDiv.style.display = 'none';
+      }
+    });
+
+    document.getElementById('confirmpassword').addEventListener('input', function() {
+      const password = document.getElementById('password').value;
+      if (this.value && password !== this.value) {
+        displayFieldError('confirmpassword', 'Passwords do not match');
+      } else {
+        clearFieldError('confirmpassword');
+      }
+    });
+  </script>
 </body>
 </html>
 
