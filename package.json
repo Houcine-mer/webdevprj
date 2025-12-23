@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx tailwindcss -i styles/input.css -o ./laravel11-carstore-proj/public/styles/output.css --watch",
+    "dev": "npx tailwindcss -i ./styles/input.css -o ./laravel11-carstore-proj/public/styles/output.css --watch",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

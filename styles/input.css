@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @import './loginsignupst.css';
 @import './Loginstyle.css';
-@import './About.css';
-@import './signup.css';
 @import './index_style.css';
 

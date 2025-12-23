@@ -113,17 +113,15 @@
     .input-success {
     @apply border-2 border-green-500;
     }
-
-  }
-}
-@media (min-width: 600px) {
-  .Signup {
+    .Signup {
     @apply px-4 py-2 w-70  text-gray-200 bg-gray-800 rounded-md hover:bg-gray-900 text-center text-lg font-bold;
-  }
-  .alr{
-    @apply text-[0.9rem] text-black font-bold underline;
+    }
+    .alr{
+      @apply text-[0.9rem] text-black font-bold underline;
+    }
   }
 }
+
 
 
 @layer base { 
@@ -225,13 +223,14 @@
     .input-success {
     @apply border-green-500;
     }
+    .Signup {
+    @apply mt-2 mb-1 justify-center items-center px-5 py-2 w-50  text-gray-200 font-bold bg-gray-800 rounded-md hover:bg-gray-900 text-lg ;
+    }
+    .alr{
+      @apply text-center text-black underline font-bold;
+    }
   }
 }
 @media (max-width: 600px) {
-  .Signup {
-    @apply mt-2 mb-1 justify-center items-center px-5 py-2 w-50  text-gray-200 font-bold bg-gray-800 rounded-md hover:bg-gray-900 text-lg ;
-  }
-  .alr{
-    @apply text-center text-black underline font-bold;
-  }
+
 }

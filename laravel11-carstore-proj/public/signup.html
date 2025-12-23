@@ -1,20 +1,16 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SignUp</title>
-  <link rel="icon" href="laravel11-carstore-proj/public/images/simple-car-silhouette-sticker-u33a0-x450 5.png">
-  <link href="styles/output.css" rel="stylesheet">
-  <link href="styles/headerStyle.css" rel="stylesheet">
-
+  <link rel="icon" href="images/simple-car-silhouette-sticker-u33a0-x450 5.png">
+  <link rel="stylesheet" href="styles/output.css">
+  <link rel="stylesheet" href="styles/headerStyle.css">
 </head>
-<body>
 
+<body class="m-0 p-0 box-border min-h-screen overflow-x-hidden bg-white dark:bg-black">
   <div class="header" id="headID">
-
-
     <div class="left-side">
       <button class="show-btn" onclick="toggleNav()" id="openID">
         <p>&#8801;</p>
@@ -24,25 +20,22 @@
       </button>
     </div>
 
-
     <div class="middle-side">
       <button class="home-btn">
-        <a href="index.html">HOME</a> 
+        <a href="index.html">HOME</a>
       </button>
-        
+
       <button class="about-btn">
         <a href="CarsList.html">CARS</a>
       </button>
       <button class="rev-btn">
-        <a href = "review.html" >REVIEWS</a>
+        <a href="review.html">REVIEWS</a>
       </button>
       <button class="about-btn">
         <a href="About.html">ABOUT</a>
       </button>
       <button class="switch-btn" onclick="switchMode()" id="switchID">SWITCH</button>
     </div>
-
-
 
     <div class="right-side">
       <button class="login-btn">
@@ -54,36 +47,141 @@
     </div>
   </div>
 
-  <div class="form-container">
-      <form class="form" id="signupForm" action="input" method="get">
-        <p class="text">Create your Account !</p>
-        <div id="error-message" style="display: none; background-color: #fee; color: #c33; padding: 12px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #c33; font-size: 14px;"></div>
-        <div id="success-message" style="display: none; background-color: #efe; color: #3c3; padding: 12px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #3c3; font-size: 14px;"></div>
-        <label for ="Username">Full Name</label>
-        <input type="text" id="fullname" class="fullnameplc" placeholder="- Enter your Full Name -" required > 
-        <span id="fullnameError" class="error"></span>
-        <label for="Username">E-mail Address</label> 
-        <input type="email" id="email" class="emailplc" placeholder="- Enter your Email Address -" required />
-        <span id="emailError" class="error"></span>
-        <label for="password">Password</label>
-        <input type="password" id="password" class="passwordplc" placeholder="- Enter your Password -" name="password" required />
-        <span id="passwordError" class="error"></span>
-        <label for ="password">Confirm Password</label>
-        <input type="password" id="confirmpassword" class="passwordcnfplc" placeholder="- Confirm your Password -" required > 
-        <span id="confirmpasswordError" class="error"></span>
+  <div
+    class="min-h-screen pt-24 pb-16 px-4 flex justify-center items-center
+           bg-[url('/images/upcoming-trends-in-the-world-of-car-dealerships.jpeg')]
+           bg-cover bg-center bg-fixed
+           dark:bg-[url('/images/mercedes-black-raobpqc23szwxs7d.jpg')]"
+  >
+    <form
+      id="signupForm"
+      action="input"
+      method="get"
+      class="w-full max-w-3xl bg-white/40 dark:bg-black/40
+             backdrop-blur-sm rounded-md shadow-md
+             flex flex-col items-center gap-3
+             px-6 sm:px-10 lg:px-20 py-4"
+    >
+      <p class="mb-[1vh] text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100">
+        Create your Account !
+      </p>
 
-        <br />
-      <button type="submit" class= "Signup">Sign Up</button>
-      <div class="loading" id="loading" style="display: none; text-align: center; margin-top: 10px; color: #667eea; font-size: 14px;">Creating your account...</div>
-      <p class="already">Already have an account? <a href="Login.html" class="alr">Sign In</a></p>
-      </form>
-  </form>
+      <div
+        id="error-message"
+        style="display: none; background-color: #fee; color: #c33; padding: 12px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #c33; font-size: 14px;"
+        class="w-full"
+      ></div>
+      <div
+        id="success-message"
+        style="display: none; background-color: #efe; color: #3c3; padding: 12px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #3c3; font-size: 14px;"
+        class="w-full"
+      ></div>
+
+      <label for="fullname" class="w-full text-[1rem] sm:text-lg font-bold text-[#1f1f1f] dark:text-gray-100">
+        Full Name
+      </label>
+      <input
+        type="text"
+        id="fullname"
+        required
+        placeholder="- Enter your Full Name -"
+        class="w-[18rem] sm:w-[22rem] h-10
+               rounded-lg border border-gray-900
+               bg-[#737070] text-sm text-center text-white
+               placeholder:text-gray-800 placeholder:italic
+               px-2.5 focus:outline-none"
+      />
+      <span id="fullnameError" class="text-red-600 text-xs sm:text-sm font-semibold block"></span>
+
+      <!-- Email -->
+      <label for="email" class="w-full text-[1rem] sm:text-lg font-bold text-[#1f1f1f] dark:text-gray-100">
+        E-mail Address
+      </label>
+      <input
+        type="email"
+        id="email"
+        required
+        placeholder="- Enter your Email Address -"
+        class="w-[18rem] sm:w-[22rem] h-10
+               rounded-lg border border-gray-900
+               bg-[#737070] text-sm text-center text-white
+               placeholder:text-gray-800 placeholder:italic
+               px-2.5 focus:outline-none"
+      />
+      <span id="emailError" class="text-red-600 text-xs sm:text-sm font-semibold block"></span>
+
+      <label for="password" class="w-full text-[1rem] sm:text-lg font-bold text-[#1f1f1f] dark:text-gray-100">
+        Password
+      </label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        placeholder="- Enter your Password -"
+        class="w-[18rem] sm:w-[22rem] h-10
+               rounded-lg border border-gray-900
+               bg-[#737070] text-sm text-center text-white
+               placeholder:text-gray-800 placeholder:italic
+               px-2.5 focus:outline-none"
+      />
+      <span id="passwordError" class="text-red-600 text-xs sm:text-sm font-semibold block"></span>
+
+      <label for="confirmpassword" class="w-full text-[1rem] sm:text-lg font-bold text-[#1f1f1f] dark:text-gray-100">
+        Confirm Password
+      </label>
+      <input
+        type="password"
+        id="confirmpassword"
+        required
+        placeholder="- Confirm your Password -"
+        class="w-[18rem] sm:w-[22rem] h-10
+               rounded-lg border border-gray-900
+               bg-[#737070] text-sm text-center text-white
+               placeholder:text-gray-800 placeholder:italic
+               px-2.5 focus:outline-none"
+      />
+      <span id="confirmpasswordError" class="text-red-600 text-xs sm:text-sm font-semibold block"></span>
+
+      <div class="h-2"></div>
+
+      <button
+        type="submit"
+        class="Signup px-5 py-2 w-[12rem] sm:w-[14rem]
+               rounded-md bg-gray-800 text-gray-200 text-lg font-bold
+               hover:bg-gray-900 transition-colors"
+      >
+        Sign Up
+      </button>
+
+      <div
+        id="loading"
+        style="display: none;"
+        class="text-center mt-2 text-indigo-500 text-sm"
+      >
+        Creating your account...
+      </div>
+
+      <p class="already mt-2 text-sm text-black dark:text-gray-100">
+        Already have an account?
+        <a href="Login.html" class="alr text-[0.9rem] font-bold text-black underline dark:text-white">
+          Sign In
+        </a>
+      </p>
+    </form>
   </div>
-  <div class="bottombar">
-    <p class="copyright">© 2024 AutoDz. All rights reserved.</p>
-    <p class="termsandprivacy">
-      <a href="#" class="terms-link">Terms of Service</a> | 
-      <a href="#" class="privacy-link">Privacy Policy</a>
+
+  <div
+    class="bottombar flex items-center h-12 px-6
+           bg-white/70 text-black
+           dark:bg-black/70 dark:text-white"
+  >
+    <p class="copyright text-xs sm:text-sm">
+      © 2024 AutoDz. All rights reserved.
+    </p>
+    <p class="termsandprivacy ml-auto text-xs sm:text-sm">
+      <a href="#" class="terms-link hover:underline">Terms of Service</a> |
+      <a href="#" class="privacy-link hover:underline">Privacy Policy</a>
     </p>
   </div>
 
@@ -106,19 +204,19 @@
 
     signupForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      
+
       clearError('error-message');
       clearError('success-message');
       clearFieldError('fullname');
       clearFieldError('email');
       clearFieldError('password');
       clearFieldError('confirmpassword');
-      
+
       const name = document.getElementById('fullname').value.trim();
       const email = document.getElementById('email').value.trim();
       const password = document.getElementById('password').value;
       const confirmPassword = document.getElementById('confirmpassword').value;
-      
+
       let hasError = false;
 
       if (!name || name.length > 255) {
@@ -145,13 +243,13 @@
         displayError('error-message', 'Please fix the errors above');
         return;
       }
-      
-      signupBtn.disabled = true;
+
+      if (signupBtn) signupBtn.disabled = true;
       loadingDiv.style.display = 'block';
-      
+
       try {
         const result = await register(name, email, password);
-        
+
         if (result.success) {
           displaySuccess('success-message', 'Account created successfully! Redirecting...');
           setTimeout(() => {
@@ -159,24 +257,24 @@
           }, 1500);
         } else {
           let errorMessage = result.error;
-          
+
           if (errorMessage.includes('email') && errorMessage.includes('unique')) {
             errorMessage = 'This email is already registered. Please use a different email or login.';
             displayFieldError('email', 'Email already exists');
           }
-          
+
           displayError('error-message', errorMessage);
-          signupBtn.disabled = false;
+          if (signupBtn) signupBtn.disabled = false;
           loadingDiv.style.display = 'none';
         }
       } catch (error) {
         displayError('error-message', 'An unexpected error occurred. Please try again.');
-        signupBtn.disabled = false;
+        if (signupBtn) signupBtn.disabled = false;
         loadingDiv.style.display = 'none';
       }
     });
 
-    document.getElementById('confirmpassword').addEventListener('input', function() {
+    document.getElementById('confirmpassword').addEventListener('input', function () {
       const password = document.getElementById('password').value;
       if (this.value && password !== this.value) {
         displayFieldError('confirmpassword', 'Passwords do not match');
@@ -186,8 +284,7 @@
     });
   </script>
   <script src="scripts/signupval.js"></script>
-  <script src="scripts/headerScript.js"> </script>
+  <script src="scripts/headerScript.js"></script>
   <script src="js/auth.js"></script>
 </body>
 </html>
-
