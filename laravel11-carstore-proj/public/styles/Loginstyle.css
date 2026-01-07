@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Base layer styles - Mobile first (max-width: 600px) */
+
 @media (max-width: 600px) {
   body {
     margin: 0;
@@ -20,12 +20,12 @@
     overflow-x: hidden;
   }
 
-  /* Topbar - Mobile */
+  
   .topbar {
     display: flex;
-    height: 44px; /* 11 * 4 */
+    height: 44px; 
     align-items: center;
-    gap: 6px; /* 1.5 * 4 */
+    gap: 6px; 
     background-color: #181818;
     padding-left: 8px;
     padding-right: 8px;
@@ -39,7 +39,7 @@
   .home-link {
     text-align: center;
     color: white;
-    font-size: 14px; /* text-sm */
+    font-size: 14px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -50,24 +50,24 @@
   }
 
   .logo {
-    width: 32px; /* 8 * 4 */
-    height: 20px; /* 5 * 4 */
+    width: 32px; 
+    height: 20px; 
     max-width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
   .AutoDz {
-    font-size: 18px; /* text-lg */
+    font-size: 18px; 
     color: white;
     font-weight: bold;
   }
 
-  /* Bottombar - Mobile */
+  
   .bottombar {
     display: flex;
     align-items: center;
-    height: 44px; /* 11 * 4 */
+    height: 44px; 
     background-color: #ffffff;
     opacity: 0.65;
     padding-left: 8px;
@@ -96,7 +96,7 @@
     text-decoration: underline;
   }
 
-  /* Bottombar Dark - Mobile */
+  
   .bottombar.dark {
     background-color: #000000;
     opacity: 0.65;
@@ -110,11 +110,11 @@
     color: white;
   }
 
-  /* Form Container - Mobile */
+  
   .form-container {
     min-height: 100vh;
     overflow-y: hidden;
-    padding: 16px; /* 4 * 4 */
+    padding: 16px; 
     display: flex;
     background-image: url('/laravel11-carstore-proj/public/images/upcoming-trends-in-the-world-of-car-dealerships.jpeg');
     opacity: 1;
@@ -130,39 +130,39 @@
   }
 
   .text {
-    font-size: 32px; /* text-2xl * 1.25 */
-    color: #111827; /* gray-900 */
+    font-size: 32px; 
+    color: #111827; 
     font-weight: bold;
   }
 
   .form {
-    margin-bottom: 8px; /* mb-2 */
-    padding-left: 24px; /* px-6 */
+    margin-bottom: 8px; 
+    padding-left: 24px; 
     padding-right: 24px;
-    padding-top: 20px; /* py-5 */
+    padding-top: 20px; 
     padding-bottom: 20px;
-    max-width: 48rem; /* max-w-3xl */
+    max-width: 48rem; 
     display: flex;
     background-color: rgba(176, 176, 176, 0.039); /* #b0b0b064 */
     flex-direction: column;
     align-items: center;
-    gap: 8px; /* gap-2 */
-    border-radius: 12px; /* rounded-md */
+    gap: 8px; 
+    border-radius: 12px; 
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
   .form label {
-    font-size: 20px; /* text-xl */
+    font-size: 20px; 
     color: #1f1f1f;
     font-weight: bold;
   }
 
   .form input {
-    padding: 10px; /* p-2.5 */
-    height: 32px; /* h-8 */
-    width: 248px; /* w-62 */
+    padding: 10px; 
+    height: 32px; 
+    width: 248px; 
     background-color: #737070;
-    border: 1px solid #111827; /* border-gray-900 */
+    border: 1px solid #111827;
     outline: none;
     border-radius: 8px;
   }
@@ -172,20 +172,20 @@
   }
 
   .form textarea {
-    padding: 10px; /* p-2.5 */
-    border: 1px solid #d1d5db; /* border-gray-300 */
+    padding: 10px; 
+    border: 1px solid #d1d5db;
     border-radius: 8px;
     resize: none;
   }
 
   .email {
     padding: 10px;
-    height: 40px; /* h-10 */
-    width: 360px; /* w-90 */
+    height: 40px; 
+    width: 360px; 
     background-color: #737070;
-    color: #1f2937; /* placeholder:text-gray-800 */
+    color: #1f2937; 
     text-align: center;
-    font-size: 14px; /* text-sm */
+    font-size: 14px; 
     font-style: italic;
     border: 1px solid #111827;
     border-radius: 8px;
@@ -214,26 +214,26 @@
     font-style: italic;
   }
 
-  /* Login Button - Mobile */
+  
   .Login {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 6px; /* py-1.5 */
+    padding-top: 6px; 
     padding-bottom: 6px;
-    width: 200px; /* w-50 */
-    color: #f3f4f6; /* text-gray-200 */
-    background-color: #1f2937; /* bg-gray-800 */
+    width: 200px; 
+    color: #f3f4f6; 
+    background-color: #1f2937; 
     border-radius: 8px;
     font-weight: bold;
-    font-size: 18px; /* text-lg */
+    font-size: 18px; 
     font-family: 'Roboto', sans-serif;
   }
 
   .Login:hover {
-    background-color: #111827; /* hover:bg-gray-900 */
+    background-color: #111827; 
   }
 
   .goto {
@@ -244,7 +244,7 @@
   }
 }
 
-/* Desktop styles (min-width: 600px) */
+
 @media (min-width: 600px) {
   body {
     margin: 0;
@@ -259,12 +259,12 @@
     overflow-x: hidden;
   }
 
-  /* Topbar - Desktop */
+  
   .topbar {
     display: flex;
-    height: 48px; /* h-12 */
+    height: 48px; 
     align-items: center;
-    gap: 12px; /* gap-3 */
+    gap: 12px; 
     background-color: #181818;
     padding-left: 24px;
     padding-right: 24px;
@@ -278,7 +278,7 @@
   .home-link {
     text-align: center;
     color: white;
-    font-size: 18px; /* text-lg */
+    font-size: 18px; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -289,24 +289,24 @@
   }
 
   .logo {
-    width: 52px; /* w-13 */
-    height: 32px; /* h-8 */
+    width: 52px; 
+    height: 32px; 
     max-width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
   .AutoDz {
-    font-size: 24px; /* text-2xl */
+    font-size: 24px;
     color: white;
     font-weight: bold;
   }
 
-  /* Bottombar - Desktop */
+ 
   .bottombar {
     display: flex;
     align-items: center;
-    height: 48px; /* h-12 */
+    height: 48px;
     background-color: #ffffff;
     opacity: 0.5;
     padding-left: 24px;
@@ -320,7 +320,7 @@
 
   .copyright {
     text-align: left;
-    font-size: 14px; /* text-sm */
+    font-size: 14px;
     color: black;
   }
 
@@ -335,7 +335,6 @@
     text-decoration: underline;
   }
 
-  /* Bottombar Dark - Desktop */
   .bottombar.dark {
     background-color: #000000;
     opacity: 0.65;
@@ -349,12 +348,11 @@
     color: white;
   }
 
-  /* Form Container - Desktop */
   .form-container {
     min-height: 100vh;
     padding: 16px;
     display: flex;
-    background-image: url('/laravel11-carstore-proj/public/images/upcoming-trends-in-the-world-of-car-dealerships.jpeg');
+    background-image: url('../images/upcoming-trends-in-the-world-of-car-dealerships.jpeg');
     opacity: 1;
     background-size: cover;
     background-position: center;
@@ -364,27 +362,27 @@
   }
 
   .form-container.dark {
-    background-image: url('/laravel11-carstore-proj/public/images/mercedes-black-raobpqc23szwxs7d.jpg');
+    background-image: url('../images/mercedes-black-raobpqc23szwxs7d.jpg');
   }
 
   .text {
     position: relative;
     top: 0;
-    font-size: 36px; /* text-4xl */
+    font-size: 36px; 
     color: #111827;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
   }
 
   .form {
-    margin-top: 8px; /* mt-2 */
-    padding-left: 80px; /* px-20 */
+    margin-top: 8px; 
+    padding-left: 80px; 
     padding-right: 80px;
-    padding-top: 28px; /* py-7 */
+    padding-top: 28px; 
     padding-bottom: 28px;
     max-width: 48rem;
     display: flex;
-    background-color: rgba(176, 176, 176, 0.039);
+    background-color: rgba(207, 207, 207, 0.318);
     flex-direction: column;
     align-items: center;
     gap: 8px;
@@ -400,8 +398,8 @@
 
   .form input {
     padding: 10px;
-    height: 40px; /* h-10 */
-    width: 360px; /* w-90 */
+    height: 40px; 
+    width: 360px; 
     background-color: #737070;
     border: 1px solid #111827;
     outline: none;
@@ -455,13 +453,13 @@
     font-style: italic;
   }
 
-  /* Login Button - Desktop */
+  
   .Login {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
-    width: 280px; /* w-70 */
+    width: 280px; 
     color: #f3f4f6;
     background-color: #1f2937;
     border-radius: 8px;
