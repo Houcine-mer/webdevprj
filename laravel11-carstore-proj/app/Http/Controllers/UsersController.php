@@ -96,6 +96,5 @@ public function login(Request $request)
         catch(\Tymon\JWTAuth\Exceptions\JWTException $e){
             return response()->json(['error'=>'Failed to Logout'],401);
         }
-
     }
 }

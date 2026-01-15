@@ -7,6 +7,7 @@
   <link rel="icon" href="images/simple-car-silhouette-sticker-u33a0-x450 5.png">
   <link rel="stylesheet" href="styles/output.css">
   <link rel="stylesheet" href="styles/headerStyle.css">
+  <link rel="stylesheet" href="styles/loginsignupst.css">
 </head>
 
 <body class="m-0 p-0 box-border min-h-screen overflow-x-hidden bg-white dark:bg-black">
@@ -55,8 +56,8 @@
   >
     <form
       id="signupForm"
-      action="input"
-      method="get"
+      action="#"
+      method="post"
       class="w-full max-w-3xl bg-white/40 dark:bg-black/40
              backdrop-blur-sm rounded-md shadow-md
              flex flex-col items-center gap-3
@@ -185,11 +186,15 @@
     </p>
   </div>
 
+  <script src="js/auth.js"></script>
+  <script src="scripts/headerScript.js"></script>
+  <script src="scripts/signupval.js"></script>
+  
   <script>
     redirectIfAuthenticated('home.html');
 
     const signupForm = document.getElementById('signupForm');
-    const signupBtn = document.getElementById('signup-btn');
+    const signupBtn = document.querySelector('button[type="submit"]');
     const loadingDiv = document.getElementById('loading');
 
     function clearFieldError(fieldId) {
@@ -204,6 +209,8 @@
 
     signupForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+      
+      console.log('Form submitted'); // Debug log
 
       clearError('error-message');
       clearError('success-message');
@@ -247,8 +254,12 @@
       if (signupBtn) signupBtn.disabled = true;
       loadingDiv.style.display = 'block';
 
+      console.log('Calling register function...'); // Debug log
+
       try {
         const result = await register(name, email, password);
+        
+        console.log('Register result:', result); // Debug log
 
         if (result.success) {
           displaySuccess('success-message', 'Account created successfully! Redirecting...');
@@ -268,11 +279,13 @@
           loadingDiv.style.display = 'none';
         }
       } catch (error) {
+        console.error('Caught error:', error); // Debug log
         displayError('error-message', 'An unexpected error occurred. Please try again.');
         if (signupBtn) signupBtn.disabled = false;
         loadingDiv.style.display = 'none';
       }
     });
+
 
     document.getElementById('confirmpassword').addEventListener('input', function () {
       const password = document.getElementById('password').value;
@@ -283,8 +296,5 @@
       }
     });
   </script>
-  <script src="scripts/signupval.js"></script>
-  <script src="scripts/headerScript.js"></script>
-  <script src="js/auth.js"></script>
 </body>
 </html>
